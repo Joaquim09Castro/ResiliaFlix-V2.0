@@ -5,8 +5,11 @@ Projeto de implementação em grupo do site ResiliaFlix
 Integrantes:
 ------------
 -Joaquim
+
 -Tati
+
 -Jansem
+
 -Jarom
 
 Pré-requisitos do projeto
