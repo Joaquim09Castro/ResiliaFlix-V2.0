@@ -8,8 +8,23 @@ class BuscaController {
     xhr.open("GET", `${urlApi}&s=${movieName}`);
 
     xhr.onload = () => {
-      console.log(xhr.responseText);
+      const responseJson = JSON.parse(xhr.responseText);
+      
+      const totalResults = responseJson.totalResults;
+      console.log(totalResults);
+
+      let indexCount = 0;
+      responseJson.Search.forEach((movie)=> {
+        let busca = new BuscaModel(movie);
+
+        console.log(busca.title);
+        console.log(indexCount);
+        
+        indexCount += 1;
+      });
+
     };
+
     xhr.send();
 
   }
