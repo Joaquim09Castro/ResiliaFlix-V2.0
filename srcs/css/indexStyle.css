@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    
+}
+
+.nav-text {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 30px;
+}
+
+.sign-btn {
+    margin-left: 15px;
+    color: #ffc810;
+    border-color: #ffc810;
+    
+}
+
+.img-sizing {
+    object-fit: cover;
+    height: 600px;
+   
+}
+
+.img-position {
+    object-position: 0 -15%;
+}
+
+.signature {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #ffc810;
+    
+}
+ 
+.letsgo-form {
+    width: 880px;
+}
+
+
+.lets-btn {
+    color: #ffc810;
+    border-color: #ffc810;
+    
+}
+
+.infos {
+    padding: 80px;
+}
+
+.card-img-top{
+    height: 120px;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    padding-top: 10px;
+    background-color: #ffc810;
+    color: black;
+    margin-bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+  }
