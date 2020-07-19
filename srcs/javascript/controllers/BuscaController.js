@@ -3,9 +3,9 @@ class BuscaController {
     throw new Error('No instance');
   }
 
-  static searchMovie(urlApi, movieName) {
+  static searchMovie(movieName) {
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", `${urlApi}&s=${movieName}`);
+    xhr.open("GET", `${buscaInfo.url}&s=${movieName}`);
 
     xhr.onload = () => {
       const responseJson = JSON.parse(xhr.responseText);
@@ -17,7 +17,7 @@ class BuscaController {
       responseJson.Search.forEach((movie)=> {
         let busca = new BuscaModel(movie);
 
-        console.log(busca.title);
+        console.log(busca.movie);
         console.log(indexCount);
         
         indexCount += 1;

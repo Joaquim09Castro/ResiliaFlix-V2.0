@@ -21,4 +21,13 @@ class BuscaModel {
   get poster() {
     return this._poster;
   }
+
+  get movie() {
+    return {
+      title: this._title,
+      year: this._year,
+      posterUrl: this._poster,
+      imdbId: this._id
+    };
+  }
 }
