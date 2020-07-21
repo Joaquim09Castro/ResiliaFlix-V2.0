@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <title> Cadastro</title>        
+    </head>
+
+<body>
+<div class="register">
+
+    <div id=formname></div>
+        <label for ="name"> Nome: </label>
+            <input type="text" id="name" >
+        <label for ="identification"> RG: </label>
+            <input type="text" id="identification">
+    </div>
+
+    <div id="formemail"></div>
+        <label for ="email"> E-mail: </label>
+            <input type="text" id="email">
+    </div>
+
+    <div id="formpassword">
+        <label for ="password"> Senha: </label>
+            <input type="password" id="password" >
+        <label for ="confirmpassword"> Confirme sua senha: </label>
+            <input type="password" id="validatepassword" >
+            <input type="submit" id="submitpassword" value="Validar senha">
+    </div>
+
+    <div class= "adress">
+        <div class="zip">
+            <label for ="zipcode"> CEP: </label>
+                <input type="text" id="zipcode" >
+                <input type="submit" id="submitadress" value="Buscar">
+        </div>
+    
+        <div class="streetnumber">
+            <label for ="street"> Logradouro: </label>
+                <input type="text" id="street">
+            <label for ="number"> Complemento: </label>
+                <input type="text" id="number" >
+        </div>
+        <div class ="federation">
+            <label for ="city"> Cidade: </label>
+                <input type="text" id="city">
+            <label for ="state"> UF: </label>
+                <input type="text" id="state">
+            <label for ="district"> Bairro </label>
+                <input type="text" id="district">
+        </div>
+
+    </div>
+
+
+</body>
+<script src="srcs/Assets/ValidatePassword.js"></script>
+<script src="srcs/Assets/Register-main.js"></script>
+<script src="srcs/Models/ModelCep.js"></script>
+<script src="srcs/Controllers/ControllerCep.js"></script>
+<script src="srcs/Views/ViewCep.js"></script>
+</html>
