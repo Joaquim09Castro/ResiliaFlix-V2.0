@@ -26,8 +26,6 @@ class ControllerCep{
                                              requestZipObj.uf,
                                              requestZipObj.bairro)
             
-
-            console.log(completeAdress);
             ViewCep.displayAdress(completeAdress.returnZip());           
         
 
