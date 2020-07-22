@@ -1,12 +1,12 @@
 body {
     background-color: black;
-    
+    margin-top: 100px;
 }
-
 
 .navbar {
     background-color: #ffc810;
 }
+
 .nav-text {
     font-family: 'Grand Hotel', cursive;
     font-size: 30px;
@@ -36,7 +36,7 @@ body {
     border-color: black;
     background-color: black;
     width: 100%;
-    
+
 }
 
 .signUp-btn a {
@@ -58,14 +58,31 @@ body {
 
 }
 
+
+.moviesSelect {
+    background-color: #131313;
+}
+
 .img-sizing {
-    object-fit: cover;
-    height: 600px;
-   
+    width: 100%;
+    margin: 5px;
+       
+}
+
+.img-sizing:hover {
+    transform: scale(115%);
 }
 
 .img-position {
     object-position: 0 -15%;
+}
+
+.control-size {
+    width: 25px;
+}
+
+.controller {
+    font-size: 50px;
 }
 
 .signature {
@@ -84,67 +101,16 @@ body {
     
 }
 
-.card-img-top{
-    height: 100px;
-}
-
-.card-sizing {
-    min-height: 18rem;
-    max-width: 18rem;
-}
-
-
-.fQuestions {
-    
-    color: #ffc810;
-    flex-flow: column;
-    text-align: center;
-    
-    
-}
-.card-header {
-    background-color: #131313;
-
-}
-
-.fQuestions h2 {
-    font-weight: bolder;
+.movielist {
+    color: #ffc810
     
 }
 
-.fQcard {
-    color: white;
-    max-width: 50rem;
-    min-width: 50rem;
-    background-color: #131313;  
-    flex-flow: column;
-}
-
-.fQcard:active{
-    border: none
-}
-
-.fQtext {
-    color: #ffc810;
-    text-decoration: none;
-    font-size: 22px;
-    background-color: #131313;
-
-
-}
-
-.fQtext:hover {
-    color: #ffc810;
-    text-decoration: none;
-    font-weight: bold
-
-}
 .drop-btn {
     display: flex;
     flex-flow: column;
     align-items: center;
 }
-
 
 footer {
     position: absolute;
@@ -170,6 +136,7 @@ footer {
     .search-btn {
         width: 100%;
     }
+
 
     .fQcard {
         min-width: auto;
