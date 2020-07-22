@@ -1,11 +1,11 @@
-class BuscaView {
+class SearchView { // View Provisória
   constructor(element) {
     this._element = element;
   }
 
   template(model) {
     return `
-      <img href="${model.poster}" rel="${model.title} poster">
+      <img src="${model.poster}" rel="${model.title} poster">
     `;
   }
 
