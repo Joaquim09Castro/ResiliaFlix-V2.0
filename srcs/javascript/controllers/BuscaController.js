@@ -10,17 +10,12 @@ class BuscaController {
     xhr.onload = () => {
       const responseJson = JSON.parse(xhr.responseText);
       
-      const totalResults = responseJson.totalResults;
-      console.log(totalResults);
-
-      let indexCount = 0;
+      //const totalResults = responseJson.totalResults;
       responseJson.Search.forEach((movie)=> {
         let busca = new BuscaModel(movie);
-
-        console.log(busca.movie);
-        console.log(indexCount);
-        
-        indexCount += 1;
+        let elementoBusca = new BuscaView(document.getElementById("search-results-container"));
+        elementoBusca.update(busca.movie);
+        console.log(busca);
       });
 
     };
