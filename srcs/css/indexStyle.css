@@ -3,10 +3,10 @@ body {
     
 }
 
+
 .navbar {
     background-color: #ffc810;
 }
-
 .nav-text {
     font-family: 'Grand Hotel', cursive;
     font-size: 30px;
@@ -120,8 +120,13 @@ body {
     font-weight: bold
 
 }
-
 .drop-btn {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.modal-footer {
     display: flex;
     flex-flow: column;
     align-items: center;
