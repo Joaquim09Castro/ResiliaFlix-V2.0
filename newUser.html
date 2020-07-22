@@ -100,169 +100,151 @@
 
     <main>
         <!-- MEMBER SIGN UP FORM-->
-<<<<<<< HEAD
+
         <div class="contactArea d-flex justify-content-center">
-=======
-        <div class="d-flex justify-content-center">
->>>>>>> master
 
-            <div class="memberSignUp m-5 p-5">
-                <div class="headForm d-flex align-items-center mb-5">
-                    <img class="logo" src="srcs/assets/logo.PNG">
-                    <h3>New here? Sign up and enjoy our movies!</h3>
+            <div class="d-flex justify-content-center">
+
+                <div class="memberSignUp m-5 p-5">
+                    <div class="headForm d-flex align-items-center mb-5">
+                        <img class="logo" src="srcs/assets/logo.PNG">
+                        <h3>New here? Sign up and enjoy our movies!</h3>
+                    </div>
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault01">First name</label>
+
+                                <input type="text" class="form-control" id="firstname" placeholder="Your name" <input
+                                    type="text" class="form-control" id="validationDefault01" placeholder="Your name"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault02">Last name</label>
+
+                                <input type="text" class="form-control" id="lastname" <input type="text"
+                                    class="form-control" id="validationDefault02" placeholder="Your last name" required>
+                            </div>
+                        </div>
+
+                        <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+                        <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername2"
+                                placeholder="Username">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault01">RG</label>
+
+                                <input type="text" class="form-control" id="identification" placeholder="Only numbers"
+                                    <input type="text" class="form-control" id="validationDefault01"
+                                    placeholder="Only numbers" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault02">E-mail</label>
+
+                                <input type="text" class="form-control" id="email" placeholder="Your email" <input
+                                    type="text" class="form-control" id="validationDefault02" placeholder="Your email"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault01">Password</label>
+
+                                <input type="password" class="form-control" id="password" placeholder="Password" <input
+                                    type="text" class="form-control" id="validationDefault01" placeholder="Password"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault02">Confirm your password</label>
+
+                                <input type="password" class="form-control" id="validatepassword" placeholder="Password"
+                                    <input type="text" class="form-control" id="validationDefault02"
+                                    placeholder="Password" required>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault02">Zip Code</label>
+
+                                <input type="text" class="form-control mb-2" placeholder="00000-000" id="zipcode">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <button class="btn send-btn" type="button" id="submitadress">Search Zipcode</button>
+
+                                <input type="text" class="form-control mb-2" placeholder="00000-000">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <button class="btn send-btn" type="button" id="button-addon2">Search Zipcode</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+
+                            <input type="text" class="form-control" id="street" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="complement" <input type="text"
+                                class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault03">City</label>
+
+                                <input type="text" class="form-control" id="city" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault03">State</label>
+                                <input type="text" class="form-control" id="state" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault03">District</label>
+                                <input type="text" class="form-control" id="district" required>
+
+                                <input type="text" class="form-control" id="validationDefault03" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault03">State</label>
+                                <input type="text" class="form-control" id="validationDefault03" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault03">District</label>
+                                <input type="text" class="form-control" id="validationDefault03" required>
+                            </div>
+                        </div>
+
+
+                        <div class="form-row">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                    I agree to <a href="#">terms and conditions</a>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn send-btn" type="submit">Submit</button>
                 </div>
-                <form>
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                            <label for="validationDefault01">First name</label>
-<<<<<<< HEAD
-                            <input type="text" class="form-control" id="firstname" placeholder="Your name"
-=======
-                            <input type="text" class="form-control" id="validationDefault01" placeholder="Your name"
->>>>>>> master
-                                required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="validationDefault02">Last name</label>
-<<<<<<< HEAD
-                            <input type="text" class="form-control" id="lastname"
-=======
-                            <input type="text" class="form-control" id="validationDefault02"
->>>>>>> master
-                                placeholder="Your last name" required>
-                        </div>
-                    </div>
-
-                    <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-                    <div class="input-group mb-2 mr-sm-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">@</div>
-                        </div>
-                        <input type="text" class="form-control" id="inlineFormInputGroupUsername2"
-                            placeholder="Username">
-                    </div>
-
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                            <label for="validationDefault01">RG</label>
-<<<<<<< HEAD
-                            <input type="text" class="form-control" id="identification" placeholder="Only numbers"
-=======
-                            <input type="text" class="form-control" id="validationDefault01" placeholder="Only numbers"
->>>>>>> master
-                                required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="validationDefault02">E-mail</label>
-<<<<<<< HEAD
-                            <input type="text" class="form-control" id="email" placeholder="Your email"
-=======
-                            <input type="text" class="form-control" id="validationDefault02" placeholder="Your email"
->>>>>>> master
-                                required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                            <label for="validationDefault01">Password</label>
-<<<<<<< HEAD
-                            <input type="password" class="form-control" id="password" placeholder="Password"
-=======
-                            <input type="text" class="form-control" id="validationDefault01" placeholder="Password"
->>>>>>> master
-                                required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="validationDefault02">Confirm your password</label>
-<<<<<<< HEAD
-                            <input type="password" class="form-control" id="validatepassword" placeholder="Password"
-=======
-                            <input type="text" class="form-control" id="validationDefault02" placeholder="Password"
->>>>>>> master
-                                required>
-                        </div>
-                    </div>
-
-
-
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                            <label for="validationDefault02">Zip Code</label>
-<<<<<<< HEAD
-                            <input type="text" class="form-control mb-2" placeholder="00000-000" id="zipcode">
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <button class="btn send-btn" type="button" id="submitadress">Search Zipcode</button>
-=======
-                            <input type="text" class="form-control mb-2" placeholder="00000-000">
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <button class="btn send-btn" type="button" id="button-addon2">Search Zipcode</button>
->>>>>>> master
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="inputAddress">Address</label>
-<<<<<<< HEAD
-                        <input type="text" class="form-control" id="street" placeholder="1234 Main St">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputAddress2">Address 2</label>
-                        <input type="text" class="form-control" id="complement"
-=======
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputAddress2">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2"
->>>>>>> master
-                            placeholder="Apartment, studio, or floor">
-                    </div>
-
-                    <div class="form-row">
-                        <div class="col-md-4 mb-3">
-                            <label for="validationDefault03">City</label>
-<<<<<<< HEAD
-                            <input type="text" class="form-control" id="city" required>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="validationDefault03">State</label>
-                            <input type="text" class="form-control" id="state" required>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="validationDefault03">District</label>
-                            <input type="text" class="form-control" id="district" required>
-=======
-                            <input type="text" class="form-control" id="validationDefault03" required>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="validationDefault03">State</label>
-                            <input type="text" class="form-control" id="validationDefault03" required>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="validationDefault03">District</label>
-                            <input type="text" class="form-control" id="validationDefault03" required>
->>>>>>> master
-                        </div>
-                    </div>
-
-
-                    <div class="form-row">
-                    </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                            <label class="form-check-label" for="invalidCheck2">
-                                I agree to <a href="#">terms and conditions</a>
-                            </label>
-                        </div>
-                    </div>
-                    <button class="btn send-btn" type="submit">Submit</button>
+                </form>
             </div>
-            </form>
-        </div>
         </div>
 
 
@@ -283,7 +265,7 @@
     <p>Resília LTDA &#169</p>
 </footer>
 
-<<<<<<< HEAD
+
 <script src="srcs/javascript/newUser-validatePassword.js"></script>
 <script src="srcs/javascript/newUser-main.js"></script>
 <script src="srcs/javascript/models/ModelCep.js"></script>
@@ -291,16 +273,15 @@
 <script src="srcs/javascript/views/ViewCep.js"></script>
 
 
-=======
->>>>>>> master
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+</script>
 
 </html>
