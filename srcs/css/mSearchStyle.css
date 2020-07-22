@@ -45,6 +45,26 @@ main {
 
 }
 
+.signUp-btn a {
+    text-decoration: none;
+    color: #ffc810;
+
+}
+
+.signUp-btn:hover {
+    background-color: #ffc810;
+    color: black;
+    width: 100%;
+    
+}
+
+.signUp-btn a:hover {
+    text-decoration: none;
+    color: black;
+
+}
+
+
 .memberSearch {
     color: #ffc810;
     min-width: 600px;
@@ -108,11 +128,18 @@ footer {
 
     .resultArea {
         display: flex;
-        flex-flow: column;
-
-        
+        flex-flow: column;  
     }
 
+    .dropdown {
+        width: 98% !important;
+    }
+
+    .dropdown-menu-right {
+        left: 0;
+        right: auto;
+        
+    }
 
 
 }

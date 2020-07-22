@@ -43,6 +43,26 @@ main {
 
 }
 
+.signUp-btn a {
+    text-decoration: none;
+    color: #ffc810;
+
+}
+
+.signUp-btn:hover {
+    background-color: #ffc810;
+    color: black;
+    width: 100%;
+    
+}
+
+.signUp-btn a:hover {
+    text-decoration: none;
+    color: black;
+
+}
+
+
 .memberSignUp {
     color: #ffc810;
     min-width: 600px;

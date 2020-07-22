@@ -36,6 +36,25 @@ body {
     border-color: black;
     background-color: black;
     width: 100%;
+    
+}
+
+.signUp-btn a {
+    text-decoration: none;
+    color: #ffc810;
+
+}
+
+.signUp-btn:hover {
+    background-color: #ffc810;
+    color: black;
+    width: 100%;
+    
+}
+
+.signUp-btn a:hover {
+    text-decoration: none;
+    color: black;
 
 }
 
@@ -126,11 +145,6 @@ body {
     align-items: center;
 }
 
-.modal-footer {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
 
 footer {
     position: absolute;
@@ -157,11 +171,19 @@ footer {
         width: 100%;
     }
 
-    .modal-sizing {
-        width: 90%;
-    }
     .fQcard {
         min-width: auto;
     }
 
+    .dropdown {
+        width: 98% !important;
+    }
+
+    .dropdown-menu-right {
+        left: 0;
+        right: auto;
+        
+    }
+
 }
+
