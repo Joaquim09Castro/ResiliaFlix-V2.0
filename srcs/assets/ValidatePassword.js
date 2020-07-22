@@ -1,12 +1,10 @@
 let passWord=document.querySelector("#password");
-let validPassword=document.querySelector("#validatepassword");
-let submitPassword=document.querySelector("#submitpassword");
+let validPassWord=document.querySelector("#validatepassword");
 
-
-submitPassword.addEventListener("click", () =>{
-
+validPassWord.addEventListener("focusout", () =>{
+   
     let passWordStr=passWord.value;
-    let validPassWordStr=validPassword.value;
+    let validPassWordStr=validPassWord.value;
 
     if(passWordStr.length<6){
         alert("A senha deve conter mais que 6 caracteres");
@@ -18,9 +16,11 @@ submitPassword.addEventListener("click", () =>{
     else {
 
         alert("Senha válida!");
-    } 
+    }  
 
 });
+
+
 
 
 
