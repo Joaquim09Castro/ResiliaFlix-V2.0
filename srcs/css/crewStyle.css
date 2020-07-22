@@ -3,10 +3,14 @@ body {
     
 }
 
+main {
+    margin-top: 100px;
+}
 
 .navbar {
     background-color: #ffc810;
 }
+
 .nav-text {
     font-family: 'Grand Hotel', cursive;
     font-size: 30px;
@@ -39,88 +43,39 @@ body {
 
 }
 
-.img-sizing {
-    object-fit: cover;
-    height: 600px;
-   
-}
-
-.img-position {
-    object-position: 0 -15%;
-}
-
-.signature {
+.Crew {
     color: #ffc810;
-    align-items: center;
+}
+
+.crewCard {
+    width: 18rem;
+    text-align: center;
+    background-color: #131313;
     
 }
- 
-.signature h3 {
-    text-align: center;
+
+.crewPic {
+    border-radius: 300px;
+    box-sizing: border-box;
+    width: 100px;
 }
 
-.lets-btn {
+.memberContact {
     color: #ffc810;
+    min-width: 600px;
+    background-color: #131313;
+
+}
+
+.send-btn {
+    color: black;
     border-color: #ffc810;
+    background-color: #ffc810;
+    width: 100%;
     
 }
 
-.card-img-top{
-    height: 100px;
-}
-
-.card-sizing {
-    min-height: 18rem;
-    max-width: 18rem;
-}
-
-
-.fQuestions {
-    
-    color: #ffc810;
-    flex-flow: column;
-    text-align: center;
-    
-    
-}
-.card-header {
-    background-color: #131313;
-
-}
-
-.fQuestions h2 {
-    font-weight: bolder;
-    
-}
-
-.fQcard {
-    color: white;
-    max-width: 50rem;
-    min-width: 50rem;
-    background-color: #131313;  
-    flex-flow: column;
-}
-
-.fQcard:active{
-    border: none
-}
-
-.fQtext {
-    color: #ffc810;
-    text-decoration: none;
-    font-size: 22px;
-    background-color: #131313;
-
-
-}
-
-.fQtext:hover {
-    color: #ffc810;
-    text-decoration: none;
-    font-weight: bold
-
-}
-.drop-btn {
+.modal-btn {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -160,7 +115,8 @@ footer {
     .modal-sizing {
         width: 90%;
     }
-    .fQcard {
+
+    .memberContact {
         min-width: auto;
     }
 
