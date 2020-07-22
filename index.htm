@@ -13,8 +13,8 @@
 <body>
   <header>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light" style='background-color: #ffc810;'>
-        <a class="navbar-brand nav-text" href="#">
+     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <a class="navbar-brand nav-text" href="index.htm">
           <img src="srcs/assets/logo2.PNG" width="35" height="35" class="d-inline-block align-center" alt="ResiliaFlix" loading="lazy">
           ResíliaFlix
         </a>
@@ -26,22 +26,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.htm">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 What to watch?
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Movies</a>
-                <a class="dropdown-item" href="#">Series</a>
+                <a class="dropdown-item" href="movies.html">Movies</a>
+                <a class="dropdown-item" href="series.html">Series</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">What's next?</a>
+                <a class="dropdown-item" href="news.html">What's next?</a>
               </div>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#">Crew</a>
+                <a class="nav-link" href="Crew.html">Crew</a>
             </li>
 
           </ul>
@@ -49,56 +49,45 @@
           <form class="form-inline my-2 my-lg-0 mr-3">
             <input class="form-control mr-sm-2 mb-1" type="search" placeholder="Your favorite movie here" aria-label="Search">
             <button class="btn btn-outline-dark mb-1 mr-2 search-btn" type="submit">Search</button>
-            <button class="btn btn-dark sign-btn mb-1 mr-2" type="button" data-toggle="modal" data-target="#signInModal">Sign in</button>
-          </form>
-          
-          
-            <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
-              <!--MODAL SIGN IN-->
-              <div class="modal-dialog modal-dialog-centered modal-sizing">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="signInModalLabel">Sign in</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
+                  <div class="dropdown">
+                    <button class="btn btn-dark sign-btn mb-1 mr-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Sign in
                     </button>
-            
+                    <!--SIGN IN DROPDOWN MENU-->
+                    <div class="dropdown-menu dropdown-menu-right p-5" aria-labelledby="dropdownMenuButton">
+                      <h3>Hello! :) </h3>
+                      <form>
+                        <div class="form-group">
+                          <label for="userEmail">Email address</label>
+                          <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+                        </div>
+                
+                        <div class="form-group">
+                          <label for="userPassword">Password</label>
+                          <input type="password" class="form-control" id="userPassword">
+                          <small id="emailHelp" class="form-text text-muted"> <a class="passwordReset" href="passwordReset.html"> Forgot your password? </a></small>
+                          <div class="form-group form-check m-1">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                          </div>  
+                        </div>
+                    
+                
+
+                
+                        <button type="button" class="btn enter-btn drop-btn">Enter</button>
+
+                        <div class="dropdown-divider"></div>
+
+                        Not a member yet?
+                        <button type="button" class="btn btn-primary signUp-btn">Sign up now</button>
+                
+                      </form>
+                    </div>
                   </div>
-            
-                  <div class="modal-body">
-            
-                    <form>
-                      <div class="form-group">
-                        <label for="userEmail">Email address</label>
-                        <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
-                      </div>
-              
-                      <div class="form-group">
-                        <label for="userPassword">Password</label>
-                        <input type="password" class="form-control" id="userPassword">
-                        <small id="emailHelp" class="form-text text-muted"> <a class="passwordReset" href="passwordReset.html"> Forgot your password? </a></small>
-                      </div>
-              
-                      <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="rememberMe">
-                        <label class="form-check-label" for="rememberMe">Remember me</label>
-                      </div>
-              
-                      <button type="button" class="btn enter-btn modal-btn">Enter</button>
-              
-                    </form>
-                  </div>
-            
-                  <div class="modal-footer">
-                    Not a member yet?
-                    <button type="button" class="btn btn-primary signUp-btn">Sign up now</button>
-                  </div>
-            
-                </div>
-              </div>
-            </div>    
-        </div>
-    </nav>
+          </form>
+       </div>    
+     </nav>
   </header>
 
     <main>     
@@ -120,11 +109,11 @@
             <img src="srcs/assets/yourname.jpg" class="d-block w-100 img-sizing img-position" alt="Your Name">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -255,10 +244,11 @@
 <footer>
     <!--SOCIAL MEDIA-->
     <div>
-        <a href="https://twitter.com/resiliaflix"><img src="srcs/assets/twitter.png" width="30" height="30"> </a>
-        <a href="https://facebook.com/resiliaflix"><img src="srcs/assets/facebook.png" width="30" height="30"></a>
-        <a href="https://youtube.com/resiliaflix"><img src="srcs/assets/youtube.png" width="30" height="30"></a>
-        <a href="https://instagram.com/resiliaflix"><img src="srcs/assets/instagram.png" width="30" height="30"></a>         
+        <a href="https://twitter.com/resiliaflix" target="blank"><img src="srcs/assets/twitter.png" width="30" height="30"> </a>
+        <a href="https://facebook.com/resiliaflix" target="blank"><img src="srcs/assets/facebook.png" width="30" height="30"></a>
+        <a href="https://youtube.com/resiliaflix" target="blank"><img src="srcs/assets/youtube.png" width="30" height="30"></a>
+        <a href="https://instagram.com/resiliaflix" target="blank"><img src="srcs/assets/instagram.png" width="30" height="30"></a>         
+
     </div>  
     <br><br>
     <p>Resília LTDA &#169</p>

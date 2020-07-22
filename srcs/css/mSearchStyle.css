@@ -3,10 +3,16 @@ body {
     
 }
 
-
 .navbar {
     background-color: #ffc810;
+
+
 }
+
+main {
+    margin-top: 100px;
+}
+
 .nav-text {
     font-family: 'Grand Hotel', cursive;
     font-size: 30px;
@@ -39,98 +45,35 @@ body {
 
 }
 
-.img-sizing {
-    object-fit: cover;
-    height: 600px;
-   
-}
-
-.img-position {
-    object-position: 0 -15%;
-}
-
-.signature {
+.memberSearch {
     color: #ffc810;
-    align-items: center;
-    
-}
- 
-.signature h3 {
-    text-align: center;
+    min-width: 600px;
+    background-color: #131313;
+
 }
 
-.lets-btn {
-    color: #ffc810;
+.poster {
+    display: block;
+    margin: 5px auto;
+    min-width: 50%;
+    max-width: 100%;
+
+}
+
+.send-btn {
+    color: black;
     border-color: #ffc810;
+    background-color: #ffc810;
+    width: 100%;
     
 }
 
-.card-img-top{
-    height: 100px;
-}
-
-.card-sizing {
-    min-height: 18rem;
-    max-width: 18rem;
-}
-
-
-.fQuestions {
-    
-    color: #ffc810;
-    flex-flow: column;
-    text-align: center;
-    
-    
-}
-.card-header {
-    background-color: #131313;
-
-}
-
-.fQuestions h2 {
-    font-weight: bolder;
-    
-}
-
-.fQcard {
-    color: white;
-    max-width: 50rem;
-    min-width: 50rem;
-    background-color: #131313;  
-    flex-flow: column;
-}
-
-.fQcard:active{
-    border: none
-}
-
-.fQtext {
-    color: #ffc810;
-    text-decoration: none;
-    font-size: 22px;
-    background-color: #131313;
-
-
-}
-
-.fQtext:hover {
-    color: #ffc810;
-    text-decoration: none;
-    font-weight: bold
-
-}
 .drop-btn {
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 
-.modal-footer {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
 
 footer {
     position: absolute;
@@ -157,11 +100,19 @@ footer {
         width: 100%;
     }
 
-    .modal-sizing {
-        width: 90%;
-    }
-    .fQcard {
+
+    .memberSearch {
         min-width: auto;
+        padding: 25px;
     }
+
+    .resultArea {
+        display: flex;
+        flex-flow: column;
+
+        
+    }
+
+
 
 }
