@@ -1,5 +1,9 @@
 body {
     background-color: black;
+    
+}
+
+main {
     margin-top: 100px;
 }
 
@@ -39,50 +43,20 @@ body {
 
 }
 
-.moviesSelect {
+
+.msgArea {
+    color: #ffc810;
+    min-width: 600px;
     background-color: #131313;
+
 }
 
-.img-sizing {
-    width: 100%;
-    margin: 5px;
-       
-}
 
-.img-sizing:hover {
-    transform: scale(115%);
-}
-
-.img-position {
-    object-position: 0 -15%;
-}
-
-.control-size {
-    width: 25px;
-}
-
-.controller {
-    font-size: 50px;
-}
-
-.signature {
-    color: #ffc810;
-    align-items: center;
-    
-}
- 
-.signature h3 {
-    text-align: center;
-}
-
-.lets-btn {
-    color: #ffc810;
+.send-btn {
+    color: black;
     border-color: #ffc810;
-    
-}
-
-.movielist {
-    color: #ffc810
+    background-color: #ffc810;
+    width: 100%;
     
 }
 
@@ -91,6 +65,7 @@ body {
     flex-flow: column;
     align-items: center;
 }
+
 
 footer {
     position: absolute;
@@ -120,7 +95,8 @@ footer {
     .modal-sizing {
         width: 90%;
     }
-    .fQcard {
+
+    .memberContact {
         min-width: auto;
     }
 
