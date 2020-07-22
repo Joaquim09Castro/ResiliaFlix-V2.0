@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="srcs/assets/logo2.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="srcs/css/newUserStyle.css">
+    <title>Sign Up - ResíliaFlix</title>
+</head>
+
+<body>
+    <header>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <a class="navbar-brand nav-text" href="index.htm">
+                <img src="srcs/assets/logo2.PNG" width="35" height="35" class="d-inline-block align-center"
+                    alt="ResiliaFlix" loading="lazy">
+                ResíliaFlix
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.htm">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            What to watch?
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="movies.html">Movies</a>
+                            <a class="dropdown-item" href="series.html">Series</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="news.html">What's next?</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Crew.html">Crew</a>
+                    </li>
+
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0 mr-3">
+                    <input class="form-control mr-sm-2 mb-1" type="search" placeholder="Your favorite movie here"
+                        aria-label="Search">
+                    <button class="btn btn-outline-dark mb-1 mr-2 search-btn" type="submit">Search</button>
+                    <div class="dropdown">
+                        <button class="btn btn-dark sign-btn mb-1 mr-2 dropdown-toggle" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sign in
+                        </button>
+                        <!--SIGN IN DROPDOWN MENU-->
+                        <div class="dropdown-menu dropdown-menu-right p-5" aria-labelledby="dropdownMenuButton">
+                            <h3>Hello! :) </h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="userEmail">Email address</label>
+                                    <input type="email" class="form-control" id="userEmail"
+                                        aria-describedby="emailHelp">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="userPassword">Password</label>
+                                    <input type="password" class="form-control" id="userPassword">
+                                    <small id="emailHelp" class="form-text text-muted"> <a class="passwordReset"
+                                            href="passwordReset.html"> Forgot your password? </a></small>
+                                </div>
+
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                                </div>
+
+                                <button type="button" class="btn enter-btn drop-btn">Enter</button>
+
+                                <div class="dropdown-divider"></div>
+
+                                Not a member yet?
+                                <button type="button" class="btn btn-primary signUp-btn"> <a href="newUser.html">Sign up
+                                        now</a></button>
+
+                            </form>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- MEMBER SIGN UP FORM-->
+        <div class="contactArea d-flex justify-content-center">
+
+            <div class="memberSignUp m-5 p-5">
+                <div class="headForm d-flex align-items-center mb-5">
+                    <img class="logo" src="srcs/assets/logo.PNG">
+                    <h3>New here? Sign up and enjoy our movies!</h3>
+                </div>
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">First name</label>
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="Your name"
+                                required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault02">Last name</label>
+                            <input type="text" class="form-control" id="validationDefault02"
+                                placeholder="Your last name" required>
+                        </div>
+                    </div>
+
+                    <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                        </div>
+                        <input type="text" class="form-control" id="inlineFormInputGroupUsername2"
+                            placeholder="Username">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">RG</label>
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="Only numbers"
+                                required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault02">E-mail</label>
+                            <input type="text" class="form-control" id="validationDefault02" placeholder="Your email"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">Password</label>
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="Password"
+                                required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault02">Confirm your password</label>
+                            <input type="text" class="form-control" id="validationDefault02" placeholder="Password"
+                                required>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault02">Zip Code</label>
+                            <input type="text" class="form-control mb-2" placeholder="00000-000">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <button class="btn send-btn" type="button" id="button-addon2">Search Zipcode</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartment, studio, or floor">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault03">City</label>
+                            <input type="text" class="form-control" id="validationDefault03" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault03">State</label>
+                            <input type="text" class="form-control" id="validationDefault03" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault03">District</label>
+                            <input type="text" class="form-control" id="validationDefault03" required>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                I agree to <a href="#">terms and conditions</a>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn send-btn" type="submit">Submit</button>
+            </div>
+            </form>
+        </div>
+        </div>
+
+
+        <br>
+
+    </main>
+</body>
+
+<footer>
+    <!--SOCIAL MEDIA-->
+    <div>
+        <a href="https://twitter.com/resiliaflix"><img src="srcs/assets/twitter.png" width="30" height="30"> </a>
+        <a href="https://facebook.com/resiliaflix"><img src="srcs/assets/facebook.png" width="30" height="30"></a>
+        <a href="https://youtube.com/resiliaflix"><img src="srcs/assets/youtube.png" width="30" height="30"></a>
+        <a href="https://instagram.com/resiliaflix"><img src="srcs/assets/instagram.png" width="30" height="30"></a>
+    </div>
+    <br><br>
+    <p>Resília LTDA &#169</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+</html>
