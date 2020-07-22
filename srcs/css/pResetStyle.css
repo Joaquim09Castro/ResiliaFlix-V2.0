@@ -1,0 +1,107 @@
+body {
+    background-color: black;
+    
+}
+
+main {
+    margin-top: 100px;
+}
+
+.navbar {
+    background-color: #ffc810;
+}
+
+.nav-text {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 30px;
+}
+
+.sign-btn {
+    color: #ffc810;
+    border-color: black;
+    background-color: black;
+    
+}
+
+.passwordReset {
+    text-decoration: underline;
+    color: black;
+}
+
+.enter-btn {
+    color: black;
+    border-color: #ffc810;
+    background-color: #ffc810;
+    width: 100%;
+}
+
+.signUp-btn {
+    color: #ffc810;
+    border-color: black;
+    background-color: black;
+    width: 100%;
+
+}
+
+
+.memberContact {
+    color: #ffc810;
+    min-width: 600px;
+    background-color: #131313;
+
+}
+
+.send-btn {
+    color: black;
+    border-color: #ffc810;
+    background-color: #ffc810;
+    width: 100%;
+    
+}
+
+.drop-btn {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.modal-footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    padding-top: 10px;
+    background-color: #ffc810;
+    color: black;
+    margin-bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+@media (max-width: 850px) {
+
+    .sign-btn {
+        width: 100%;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+    .modal-sizing {
+        width: 90%;
+    }
+
+    .memberContact {
+        min-width: auto;
+    }
+
+}

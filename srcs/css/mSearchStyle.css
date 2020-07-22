@@ -1,0 +1,118 @@
+body {
+    background-color: black;
+    
+}
+
+.navbar {
+    background-color: #ffc810;
+
+
+}
+
+main {
+    margin-top: 100px;
+}
+
+.nav-text {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 30px;
+}
+
+.sign-btn {
+    color: #ffc810;
+    border-color: black;
+    background-color: black;
+    
+}
+
+.passwordReset {
+    text-decoration: underline;
+    color: black;
+}
+
+.enter-btn {
+    color: black;
+    border-color: #ffc810;
+    background-color: #ffc810;
+    width: 100%;
+}
+
+.signUp-btn {
+    color: #ffc810;
+    border-color: black;
+    background-color: black;
+    width: 100%;
+
+}
+
+.memberSearch {
+    color: #ffc810;
+    min-width: 600px;
+    background-color: #131313;
+
+}
+
+.poster {
+    display: block;
+    margin: 5px auto;
+    min-width: 50%;
+    max-width: 100%;
+
+}
+
+.send-btn {
+    color: black;
+    border-color: #ffc810;
+    background-color: #ffc810;
+    width: 100%;
+    
+}
+
+.drop-btn {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    padding-top: 10px;
+    background-color: #ffc810;
+    color: black;
+    margin-bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+@media (max-width: 850px) {
+
+    .sign-btn {
+        width: 100%;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+
+    .memberSearch {
+        min-width: auto;
+        padding: 25px;
+    }
+
+    .resultArea {
+        display: flex;
+        flex-flow: column;
+
+        
+    }
+
+
+
+}
