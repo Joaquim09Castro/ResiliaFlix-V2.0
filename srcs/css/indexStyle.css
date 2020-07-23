@@ -79,9 +79,15 @@ body {
 }
 
 .lets-btn {
-    color: #ffc810;
-    border-color: #ffc810;
+    color: black;
+    background-color: #ffc810;
     
+}
+
+.lets-btn:hover {
+    color: #ffc810;
+    background-color: black;
+    border-color: #ffc810;
 }
 
 .card-img-top{
