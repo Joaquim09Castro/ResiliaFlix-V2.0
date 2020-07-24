@@ -12,7 +12,7 @@ class SearchController {
 
       responseJson.Search.forEach((movie)=> {
         let search = new SearchModel(movie);
-        if (search.poster == "N/A") search._poster = "srcs/assets/logo.PNG";
+        if (search.poster == "N/A") search._poster = "srcs/assets/placeholder_cover.jpg";
 
         let resultDisplayer = new SearchView(searchInfo.resultsContainer);
 

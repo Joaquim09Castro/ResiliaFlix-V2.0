@@ -5,7 +5,7 @@ class SearchView { // View Provisória
 
   template(model) {
     return `
-      <img src="${model.poster}" rel="${model.title} poster">
+      <img src="${model.poster}" rel="${model.title} poster" style="0.8">
     `;
   }
 
