@@ -1,0 +1,195 @@
+body {
+    background-color: black;
+    
+}
+
+
+.navbar {
+    background-color: #ffc810;
+}
+.nav-text {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 30px;
+}
+
+.sign-btn {
+    color: #ffc810;
+    border-color: black;
+    background-color: #ffc810;
+    
+}
+
+.passwordReset {
+    text-decoration: underline;
+    color: black;
+}
+
+.enter-btn {
+    color: black;
+    border-color: #ffc810;
+    background-color: #ffc810;
+    width: 100%;
+}
+
+.signUp-btn {
+    color: #ffc810;
+    border-color: black;
+    background-color: black;
+    width: 100%;
+    
+}
+
+.signUp-btn a {
+    text-decoration: none;
+    color: #ffc810;
+
+}
+
+.signUp-btn:hover {
+    background-color: #ffc810;
+    color: black;
+    width: 100%;
+    
+}
+
+.signUp-btn a:hover {
+    text-decoration: none;
+    color: black;
+
+}
+
+.img-sizing {
+    object-fit: cover;
+    height: 600px;
+   
+}
+
+.img-position {
+    object-position: 0 -15%;
+}
+
+.signature {
+    color: #ffc810;
+    align-items: center;
+    
+}
+ 
+.signature h3 {
+    text-align: center;
+}
+
+.lets-btn {
+    color: black;
+    background-color: #ffc810;
+    
+}
+
+.lets-btn:hover {
+    color: #ffc810;
+    background-color: black;
+    border-color: #ffc810;
+}
+
+.card-img-top{
+    height: 100px;
+}
+
+.card-sizing {
+    min-height: 18rem;
+    max-width: 18rem;
+}
+
+
+.fQuestions {
+    
+    color: #ffc810;
+    flex-flow: column;
+    text-align: center;
+    
+    
+}
+.card-header {
+    background-color: #131313;
+
+}
+
+.fQuestions h2 {
+    font-weight: bolder;
+    
+}
+
+.fQcard {
+    color: white;
+    max-width: 50rem;
+    min-width: 50rem;
+    background-color: #131313;  
+    flex-flow: column;
+}
+
+.fQcard:active{
+    border: none
+}
+
+.fQtext {
+    color: #ffc810;
+    text-decoration: none;
+    font-size: 22px;
+    background-color: #131313;
+
+
+}
+
+.fQtext:hover {
+    color: #ffc810;
+    text-decoration: none;
+    font-weight: bold
+
+}
+.drop-btn {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    padding-top: 10px;
+    background-color: #ffc810;
+    color: black;
+    margin-bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+@media (max-width: 850px) {
+
+    .sign-btn {
+        width: 100%;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+    .fQcard {
+        min-width: auto;
+    }
+
+    .dropdown {
+        width: 98% !important;
+    }
+
+    .dropdown-menu-right {
+        left: 0;
+        right: auto;
+        
+    }
+
+}
+
