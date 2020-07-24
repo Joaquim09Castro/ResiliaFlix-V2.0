@@ -64,6 +64,11 @@ main {
 
 }
 
+.searchArea {
+    color: #ffc810;
+    background-color: #131313;
+    width: 60%;
+}
 
 .memberSearch {
     color: #ffc810;
@@ -80,6 +85,19 @@ main {
 
 }
 
+.lets-btn {
+    color: black;
+    background-color: #ffc810;
+    border: none;
+    
+}
+
+.lets-btn:hover {
+    color: #ffc810;
+    background-color: black;
+    border-color: #ffc810;
+}
+
 .send-btn {
     color: black;
     border-color: #ffc810;
@@ -92,6 +110,21 @@ main {
     display: flex;
     flex-flow: column;
     align-items: center;
+    width: 155px;
+}
+
+.movieTitle {
+    opacity: 0%;
+}
+
+.movieTitle:hover {
+    opacity: 100%;
+    
+    
+}
+
+.resultArea {
+    display: none;
 }
 
 
@@ -141,5 +174,12 @@ footer {
         
     }
 
+    .resultArea {
+        display: none;
+    
+    }
 
+    .drop-btn {
+        width: 100%;
+    }
 }

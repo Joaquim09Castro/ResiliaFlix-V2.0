@@ -3,19 +3,24 @@ body {
     
 }
 
-
 .navbar {
     background-color: #ffc810;
 }
+
 .nav-text {
     font-family: 'Grand Hotel', cursive;
     font-size: 30px;
 }
 
 .sign-btn {
-    color: #ffc810;
-    border-color: black;
     background-color: black;
+    border-color: none;
+    
+}
+
+.sign-btn:hover {
+    background-color: #ffc810;
+    border-color: #131313;
     
 }
 
@@ -68,6 +73,34 @@ body {
     object-position: 0 -15%;
 }
 
+.modal-header {
+    background-color: #ffc810;
+    color: black;
+
+}
+
+.modal-footer {
+    background-color: #131313;
+    color: #ffc810;
+}
+
+
+
+.memberSearch {
+    color: #131313;
+    max-width: 45%;
+
+}
+
+.poster {
+    display: block;
+    margin: 5px auto;
+    min-width: 15%;
+    max-width: 100%;
+
+}
+
+
 .signature {
     color: #ffc810;
     align-items: center;
@@ -81,6 +114,7 @@ body {
 .lets-btn {
     color: black;
     background-color: #ffc810;
+    border: none;
     
 }
 
@@ -90,6 +124,10 @@ body {
     border-color: #ffc810;
 }
 
+.card-deck {
+    margin: 0;
+}
+
 .card-img-top{
     height: 100px;
 }
@@ -97,6 +135,7 @@ body {
 .card-sizing {
     min-height: 18rem;
     max-width: 18rem;
+
 }
 
 
@@ -149,6 +188,7 @@ body {
     display: flex;
     flex-flow: column;
     align-items: center;
+    width: 155px;
 }
 
 
@@ -181,6 +221,20 @@ footer {
         min-width: auto;
     }
 
+    .resultArea {
+        flex-flow: column;
+
+    }
+
+    .memberSearch {
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    .modal-dialog {
+        max-width: 92%;
+    }
+
     .dropdown {
         width: 98% !important;
     }
@@ -189,6 +243,10 @@ footer {
         left: 0;
         right: auto;
         
+    }
+
+    .drop-btn {
+        width: 100%;
     }
 
 }

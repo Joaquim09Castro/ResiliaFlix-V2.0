@@ -17,9 +17,14 @@ main {
 }
 
 .sign-btn {
-    color: #ffc810;
-    border-color: black;
     background-color: black;
+    border-color: none;
+    
+}
+
+.sign-btn:hover {
+    background-color: #ffc810;
+    border-color: #131313;
     
 }
 
@@ -62,6 +67,37 @@ main {
 
 }
 
+.modal-header {
+    background-color: #ffc810;
+    color: black;
+
+}
+
+.modal-footer {
+    background-color: #131313;
+    color: #ffc810;
+}
+
+
+
+.memberSearch {
+    color: #131313;
+    max-width: 45%;
+
+}
+
+.lets-btn {
+    color: black;
+    background-color: #ffc810;
+    border: none;
+    
+}
+
+.lets-btn:hover {
+    color: #ffc810;
+    background-color: black;
+    border-color: #ffc810;
+}
 
 
 .memberContact {
@@ -83,6 +119,7 @@ main {
     display: flex;
     flex-flow: column;
     align-items: center;
+    width: 155px;
 }
 
 
