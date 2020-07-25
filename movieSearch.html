@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="srcs/assets/logo2.PNG">
+  <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="srcs/css/mSearchStyle.css">
+  <title>Movie Results - ResíliaFlix</title>
+</head>
+
+<body>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <a class="navbar-brand nav-text" href="index.htm">
+      <img src="srcs/assets/logo2.PNG" width="35" height="35" class="d-inline-block align-center" alt="ResiliaFlix"
+        loading="lazy">
+      Resíliaflix
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.htm">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            What to watch?
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="movies.html">Movies</a>
+            <a class="dropdown-item" href="series.html">Series</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="news.html">What's next?</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Crew.html">Crew</a>
+        </li>
+
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0 mr-3">
+        <div class="dropdown">
+          <button class="btn btn-dark sign-btn mb-1 mr-2 dropdown-toggle signIn-btn" type="button"
+            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="srcs/assets/user.png" width="25" height="25">
+          </button>
+
+          <!--SIGN IN DROPDOWN MENU-->
+          <div class="dropdown-menu dropdown-menu-right p-3" aria-labelledby="dropdownMenuButton">
+            <h3>Hello! :) </h3>
+            <form>
+              <button type="button" class="btn enter-btn drop-btn" id="button-login" data-toggle="modal"
+                data-target="#logIn">Enter</button>
+              <div class="dropdown-divider"></div>
+              Not a member yet?
+              <a href="newUser.html" role="button" class="btn btn-primary signUp-btn">Sign up now</a></button>
+
+            </form>
+          </div>
+        </div>
+      </form>
+    </div>
+  </nav>
+  </header>
+
+  <main>
+    <!-- LOGIN MODAL-->
+    <div class="modal fade" id="logIn" tabindex="-1" role="dialog" aria-labelledby="logInLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="logInLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0">
+            <form class="p-3">
+              <div class="form-group">
+                <label for="userEmail">Email address</label>
+                <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+              </div>
+
+              <div class="form-group">
+                <label for="userPassword">Password</label>
+                <input type="password" class="form-control" id="userPassword">
+                <small id="emailHelp" class="form-text text-muted mb-3"> <a class="passwordReset"
+                    href="passwordReset.html"> Forgot your password? </a></small>
+                <div class="form-group form-check m-1">
+                  <input type="checkbox" class="form-check-input" id="rememberMe">
+                  <label class="form-check-label" for="rememberMe">Remember me</label>
+                </div>
+              </div>
+            </form>
+            <div class="modal-footer d-flex justify-content-center">
+              <p>Problems in login?</p>
+              <a href="#" role="button" class="btn btn-primary lets-btn">Help me</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--SEARCH PLACE-->
+    <div class="d-flex justify-content-center ">
+      <div class="searchArea d-flex justify-content-center flex-column p-3 m-2">
+        <spam class="d-flex align-items-center flex-column">
+          <h3 class="pb-2">All your favorite movies and series in one place!</h3>
+          <p class="pb-5">Here you can search through our full catalog, don't be shy.</p>
+        </spam>
+        <form class="input-group" id="search-form">
+          <input type="text" class="form-control" aria-label="Text input with dropdown button" id="search-input">
+          <div class="input-group-append">
+            <button class="btn lets-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" id="search-btn">Search</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Movies</a>
+              <a class="dropdown-item" href="#">Series</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Show me everything</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="p-5 ml-5 mr-5">
+      <div class="card-deck" id="search-results-container">
+
+      </div>
+    </div>
+
+
+
+    </div>
+    <br>
+    <!--INFOMOVIES MODAL-->
+    <div class="modal fade" id="infoMovies" tabindex="-1" role="dialog" aria-labelledby="infoMoviesLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="infoMoviesLabel">Discover</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="resultArea d-flex justify-content-center p-md-1 m-md-1">
+              <img class="poster p-3" id="poster" src="srcs/assets/ResiliaPoster.jpg">
+              <div class="memberSearch m-md-3 p-md-3">
+                <h3 class="mb-5" id="title"><b>TITLE</b></h3>
+                <p id="year">YEAR: </p>
+                <p id="director">DIRECTOR: </p>
+                <p id="runtime">RUNTIME: </p>
+                <p id="actors">STARS:</p>
+                <p id="release">RELEASE DATE: </p>
+                <p id="synopsis">SYNOPSIS: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis
+                  odio non nibh cursus pulvinar. Nulla sagittis, tellus nec mattis finibus, metus nisi facilisis nisi,
+                  in eleifend orci metus sit amet erat. Morbi vel metus vitae lorem dapibus feugiat. </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+    </div>
+
+
+  </main>
+</body>
+
+<footer>
+  <!--SOCIAL MEDIA-->
+  <div>
+    <a href="https://twitter.com/resiliaflix" target="blank"><img src="srcs/assets/twitter.png" width="30" height="30">
+    </a>
+    <a href="https://facebook.com/resiliaflix" target="blank"><img src="srcs/assets/facebook.png" width="30"
+        height="30"></a>
+    <a href="https://youtube.com/resiliaflix" target="blank"><img src="srcs/assets/youtube.png" width="30"
+        height="30"></a>
+    <a href="https://instagram.com/resiliaflix" target="blank"><img src="srcs/assets/instagram.png" width="30"
+        height="30"></a>
+  </div>
+  <br><br>
+  <p>Resília LTDA &#169</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="srcs/javascript/movieSearch.js"></script>
+
+<script src="srcs/javascript/controllers/SearchController.js"></script>
+<script src="srcs/javascript/models/SearchModel.js"></script>
+<script src="srcs/javascript/views/SearchView.js"></script>
+
+</html>

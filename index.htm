@@ -1,93 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="srcs/assets/logo2.PNG">
-    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="srcs/css/indexStyle.css">
-    <title>Resíliaflix</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="srcs/assets/logo2.PNG">
+  <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="srcs/css/indexStyle.css">
+  <title>Resíliaflix</title>
 </head>
 
 <body>
   <header>
     <!--NAVBAR-->
-     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-        <a class="navbar-brand nav-text" href="index.htm">
-          <img src="srcs/assets/logo2.PNG" width="35" height="35" class="d-inline-block align-center" alt="ResiliaFlix" loading="lazy">
-          Resíliaflix
-        </a>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+      <a class="navbar-brand nav-text" href="index.htm">
+        <img src="srcs/assets/logo2.PNG" width="35" height="35" class="d-inline-block align-center" alt="ResiliaFlix"
+          loading="lazy">
+        Resíliaflix
+      </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.htm">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                What to watch?
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="movies.html">Movies</a>
-                <a class="dropdown-item" href="series.html">Series</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="news.html">What's next?</a>
-              </div>
-            </li>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <li class="nav-item">
-                <a class="nav-link" href="Crew.html">Crew</a>
-            </li>
-
-          </ul>
- 
-          <form class="form-inline my-2 my-lg-0 mr-3">
-            <input class="form-control mr-sm-2 mb-1" type="search" placeholder="Your favorite movie" aria-label="Search" id="movie-search">
-            <button class="btn btn-outline-dark mb-1 mr-2 search-btn" type="button" id="button-search" data-toggle="modal" data-target="#searchMovies">Search</button>
-                  <div class="dropdown">
-                    <button class="btn btn-dark sign-btn mb-1 mr-2 dropdown-toggle signIn-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="srcs/assets/user.png" width="25" height="25">
-                    </button>
-
-                    <!--SIGN IN DROPDOWN MENU-->
-                    <div class="dropdown-menu dropdown-menu-right p-3" aria-labelledby="dropdownMenuButton">
-                      <h3>Hello! :) </h3>
-                      <form>                   
-                        <button type="button" class="btn enter-btn drop-btn" id="button-login" data-toggle="modal" data-target="#logIn">Enter</button>
-                        <div class="dropdown-divider"></div>
-                        Not a member yet?
-                        <a href="newUser.html" role="button" class="btn btn-primary signUp-btn">Sign up now</a></button>
-                
-                      </form>
-                    </div>
-                  </div>
-          </form>
-       </div>    
-     </nav>
-  </header>
-
-    <main>     
-      <!-- LOGIN MODAL-->
-      <div class="modal fade" id="logIn" tabindex="-1" role="dialog" aria-labelledby="logInLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm ">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="logInLabel">Login</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.htm">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              What to watch?
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="movies.html">Movies</a>
+              <a class="dropdown-item" href="series.html">Series</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="news.html">What's next?</a>
             </div>
-            <div class="modal-body p-0">
-              <form class="p-3">
-                <div class="form-group">
-                  <label for="userEmail">Email address</label>
-                  <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
-                </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Crew.html">Crew</a>
+          </li>
+
+        </ul>
+
+        <section class="form-inline my-2 my-lg-0 mr-3">
+          <form id="form-search">
+            <input class="form-control mr-sm-2 mb-1" type="search" placeholder="Your favorite movie" aria-label="Search"
+              id="movie-search">
+            <button class="btn btn-outline-dark mb-1 mr-2 search-btn" type="submit" id="button-search"
+              data-toggle="modal" data-target="#searchMovies">Search</button>
+          </form>
+          <div class="dropdown">
+            <button class="btn btn-dark sign-btn mb-1 mr-2 dropdown-toggle signIn-btn" type="button"
+              id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="srcs/assets/user.png" width="25" height="25">
+            </button>
+
+            <!--SIGN IN DROPDOWN MENU-->
+            <div class="dropdown-menu dropdown-menu-right p-3" aria-labelledby="dropdownMenuButton">
+              <h3>Hello! :) </h3>
+              <form>
+                <button type="button" class="btn enter-btn drop-btn" id="button-login" data-toggle="modal"
+                  data-target="#logIn">Enter</button>
+                <div class="dropdown-divider"></div>
+                Not a member yet?
+                <a href="newUser.html" role="button" class="btn btn-primary signUp-btn">Sign up now</a></button>
 
                 <div class="form-group">
                   <label for="userPassword">Password</label>
@@ -100,304 +85,354 @@
                 </div>
                 <a href="#" role="button" class="btn btn-primary enter-btn">Enter</a></button>
               </form>
-              <div class="modal-footer d-flex justify-content-center">
-                <p>Problems in login?</p>
-                <a href="#" role="button" class="btn btn-primary lets-btn">Help me</a></button>
-               </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- LOGIN MODAL-->
+    <div class="modal fade" id="logIn" tabindex="-1" role="dialog" aria-labelledby="logInLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="logInLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0">
+            <form class="p-3">
+              <div class="form-group">
+                <label for="userEmail">Email address</label>
+                <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+              </div>
+
+              <div class="form-group">
+                <label for="userPassword">Password</label>
+                <input type="password" class="form-control" id="userPassword">
+                <small id="emailHelp" class="form-text text-muted mb-3"> <a class="passwordReset"
+                    href="passwordReset.html"> Forgot your password? </a></small>
+                <div class="form-group form-check m-1">
+                  <input type="checkbox" class="form-check-input" id="rememberMe">
+                  <label class="form-check-label" for="rememberMe">Remember me</label>
+                </div>
+              </div>
+            </form>
+            <div class="modal-footer d-flex justify-content-center">
+              <p>Problems in login?</p>
+              <a href="#" role="button" class="btn btn-primary lets-btn">Help me</a></button>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
 
-      <!--SEARCHMOVIES MODAL-->
-      <div class="modal fade" id="searchMovies" tabindex="-1" role="dialog" aria-labelledby="infoMoviesLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="infoMoviesLabel">Search result</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>  
-            </div>
-            <div class="modal-body p-0">
-              <div class="resultArea d-flex justify-content-center p-md-1 m-md-1">
-                <img class="poster p-3" id="poster" src="srcs/assets/ResiliaPoster.jpg">
-                <div class="memberSearch m-md-3 p-md-3">
-                  <h3 class="mb-5" id="title"><b>TITLE</b></h3>
-                  <p id="year">YEAR: </p>
-                  <p id="director">DIRECTOR: </p>
-                  <p id="runtime">RUNTIME:  </p>
-                  <p id="actors">STARS:</p>
-                  <p id="release">RELEASE DATE: </p>
-                  <p id="synopsis">SYNOPSIS: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis odio non nibh cursus pulvinar. Nulla sagittis, tellus nec mattis finibus, metus nisi facilisis nisi, in eleifend orci metus sit amet erat. Morbi vel metus vitae lorem dapibus feugiat. </p>
-                </div>
-              </div>
-              <div class="modal-footer d-flex justify-content-center">
-                <p>Not what you're looking for? Try our</p>
-                <button type="button" class="btn lets-btn" data-dismiss="modal">Advanced search</button>
-               </div>
-            </div>
-           </div>
+    <!--SEARCHMOVIES MODAL-->
+    <div class="modal fade" id="searchMovies" tabindex="-1" role="dialog" aria-labelledby="infoMoviesLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content" id="search-display">
+          <div class="modal-header">
+            <h5 class="modal-title" id="infoMoviesLabel">Search result</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-      </div>
+          <div class="modal-body p-0" id="modal-body"></div>
 
-      <!--MOVIES CAROUSEL-->
-      <div id="carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel" data-slide-to="1"></li>
-          <li data-target="#carousel" data-slide-to="2"></li>
-          <li data-target="#carousel" data-slide-to="3"></li>
-          <li data-target="#carousel" data-slide-to="4"></li>
-          <li data-target="#carousel" data-slide-to="5"></li>
-          <li data-target="#carousel" data-slide-to="6"></li>
-          <li data-target="#carousel" data-slide-to="7"></li>
-          <li data-target="#carousel" data-slide-to="8"></li>
-          <li data-target="#carousel" data-slide-to="9"></li>
-          <li data-target="#carousel" data-slide-to="10"></li>
-          <li data-target="#carousel" data-slide-to="11"></li>
-          <li data-target="#carousel" data-slide-to="12"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="#" data-toggle="modal" data-target="#infoMovies">
+          <div class="modal-footer d-flex justify-content-center">
+            <p>Not what you're looking for? Try our</p>
+            <button type="button" class="btn lets-btn" data-dismiss="modal"
+              onclick="window.location.href='movieSearch.html'">Advanced search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MOVIES CAROUSEL-->
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+        <li data-target="#carousel" data-slide-to="4"></li>
+        <li data-target="#carousel" data-slide-to="5"></li>
+        <li data-target="#carousel" data-slide-to="6"></li>
+        <li data-target="#carousel" data-slide-to="7"></li>
+        <li data-target="#carousel" data-slide-to="8"></li>
+        <li data-target="#carousel" data-slide-to="9"></li>
+        <li data-target="#carousel" data-slide-to="10"></li>
+        <li data-target="#carousel" data-slide-to="11"></li>
+        <li data-target="#carousel" data-slide-to="12"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#" data-toggle="modal" data-target="#infoMovies" id="carousel-item">
             <img src="srcs/assets/avengersEndGame.jpg" class="d-block w-100 img-sizing" alt="Avengers: Endgame">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#" data-toggle="modal" data-target="#infoMovies">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#" data-toggle="modal" data-target="#infoMovies" id="carousel-item">
             <img src="srcs/assets/interestelar.jpg" class="d-block w-100 img-sizing" alt="Interestelar">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#" data-toggle="modal" data-target="#infoMovies">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#" data-toggle="modal" data-target="#infoMovies" id="carousel-item">
             <img src="srcs/assets/parasite.jpg" class="d-block w-100 img-sizing" alt="Parasite">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#" data-toggle="modal" data-target="#infoMovies">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#" data-toggle="modal" data-target="#infoMovies" id="carousel-item">
             <img src="srcs/assets/4k-joker-2020-8l.jpg" class="d-block w-100 img-sizing img-position" alt="Joker">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#" data-toggle="modal" data-target="#infoMovies">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#" data-toggle="modal" data-target="#infoMovies" id="carousel-item">
             <img src="srcs/assets/yourname.jpg" class="d-block w-100 img-sizing img-position" alt="Your Name">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#" data-toggle="modal" data-target="#infoMovies">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#" data-toggle="modal" data-target="#infoMovies" id="carousel-item">
             <img src="srcs/assets/trumanshow.jpg" class="d-block w-100 img-sizing img-position" alt="The Truman Show">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#" data-toggle="modal" data-target="#infoMovies">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#" data-toggle="modal" data-target="#infoMovies" id="carousel-item">
             <img src="srcs/assets/nysm.jpg" class="d-block w-100 img-sizing" alt="Now You See Me">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#" data-toggle="modal" data-target="#infoMovies">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#" data-toggle="modal" data-target="#infoMovies" id="carousel-item">
             <img src="srcs/assets/split.jpg" class="d-block w-100 img-sizing" alt="Split">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#" data-toggle="modal" data-target="#infoMovies">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#" data-toggle="modal" data-target="#infoMovies" id="carousel-item">
             <img src="srcs/assets/viva.jpg" class="d-block w-100 img-sizing img-position" alt="Coco">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#" data-toggle="modal" data-target="#infoMovies">
-            <img src="srcs/assets/pocbp.jpg" class="d-block w-100 img-sizing" alt="Pirates of Caribe: The Curse of Black Pearl">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#" data-toggle="modal" data-target="#infoMovies">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#" data-toggle="modal" data-target="#infoMovies" id="carousel-item">
+            <img src="srcs/assets/pocbp.jpg" class="d-block w-100 img-sizing"
+              alt="Pirates of Caribe: The Curse of Black Pearl">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#" data-toggle="modal" data-target="#infoMovies" id="carousel-item">
             <img src="srcs/assets/rocketman.jpg" class="d-block w-100 img-sizing img-position" alt="Rocketman">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#" data-toggle="modal" data-target="#infoMovies">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#" data-toggle="modal" data-target="#infoMovies" id="carousel-item">
             <img src="srcs/assets/inception.jpg" class="d-block w-100 img-sizing img-position" alt="Inception">
-            </a>  
-          </div>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-     </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
-        <!--INFOMOVIES MODAL-->
-     <div class="modal fade" id="infoMovies" tabindex="-1" role="dialog" aria-labelledby="infoMoviesLabel" aria-hidden="true">
-       <div class="modal-dialog modal-lg">
-         <div class="modal-content">
-           <div class="modal-header">
-             <h5 class="modal-title" id="infoMoviesLabel">Discover</h5>
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-               <span aria-hidden="true">&times;</span>
-             </button>  
-           </div>
-           <div class="modal-body p-0">
-              <div class="resultArea d-flex justify-content-center p-md-1 m-md-1">
-                <img class="poster p-3" id="poster" src="srcs/assets/ResiliaPoster.jpg">
-                <div class="memberSearch m-md-3 p-md-3">
-                  <h3 class="mb-5" id="title"><b>TITLE</b></h3>
-                  <p id="year">YEAR: </p>
-                  <p id="director">DIRECTOR: </p>
-                  <p id="runtime">RUNTIME:  </p>
-                  <p id="actors">STARS:</p>
-                  <p id="release">RELEASE DATE: </p>
-                  <p id="synopsis">SYNOPSIS: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis odio non nibh cursus pulvinar. Nulla sagittis, tellus nec mattis finibus, metus nisi facilisis nisi, in eleifend orci metus sit amet erat. Morbi vel metus vitae lorem dapibus feugiat. </p>
-                </div>
-              </div>
-             
-            </div>
-         </div>
-       </div>
-     </div>
+    <!--INFOMOVIES MODAL-->
+    <div class="modal fade" id="infoMovies" tabindex="-1" role="dialog" aria-labelledby="infoMoviesLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="infoMoviesLabel">Discover</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0" id="carousel-modal-body">
 
-        <br><br>
-     <!--START MEMBERSHIP-->
-     <div class="signature d-flex flex-column align-items-center justify-content-center p-3">
-        <h3> Ready to watch? Enter your email to create or restart your membership.</h3>
-        <br><br>   
-        <div class="input-group mb-3 w-50 min-vw-75">
-          <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
-             <div class="input-group-append">
-                <button class="btn btn-outline lets-btn" type="submit" id="button-addon2">Let's go!</button>
-             </div>
-        </div>
-     </div>
-      
-     <!--BENEFITS-->
-     <div class="card-deck justify-content-center">
-       <div class="row justify-content-center">
-          <div class="card card-sizing mb-5 col-md-4 col-12 p-0">
-            <img src="srcs/assets/film.jpg" class="card-img-top" alt="filmroll">
-            <div class="card-body">
-              <h4 class="card-title">Enjoy on your TV.</h4  >
-              <p class="card-text">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>  
-            </div>
-          </div>
-          <div class="card card-sizing mb-5 col-md-4 col-12 p-0">
-            <img src="srcs/assets/film.jpg" class="card-img-top" alt="filmroll">
-            <div class="card-body">
-              <h4 class="card-title">Download your shows to watch offline.</h4>
-              <p class="card-text">Save your favorites easily and always have something to watch.</p>
-            </div>
-          </div>
-          <div class="card card-sizing mb-5 col-md-4 col-12 p-0">
-            <img src="srcs/assets/film.jpg" class="card-img-top" alt="filmroll">
-            <div class="card-body">
-              <h4 class="card-title">Watch everywhere.</h4>
-              <p class="card-text">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
-            </div>
+
           </div>
         </div>
-      </div>  
-      
-      <!--FAQ-->
-        <div class="fQuestions d-flex flex-md-column align-items-center justify-content-center p-3 mb-3">
-          <h2> Frequently Asked Questions.</h2>
-          <div class="accordion" id="accordionExample">
-            <div class="card text-white bg-dark fQcard">
-              <div class="card-header fQcard-header" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed fQtext" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    What is ResiliaFlix?
-                  </button>
-                </h2>
-              </div>
-          
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body fQcard">
-                  Resiliaflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
-                  You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
-                </div>
-              </div>
-            </div>
-            <div class="card text-white bg-dark fQcard">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed fQtext" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    How much does ResiliaFlix cost?
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body fQcard">
-                  Watch Resiliaflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from BRL21.90 to BRL45.90 a month. No extra costs, no contracts.
-                </div>
-              </div>
-            </div>
-            <div class="card text-white bg-dark fQcard">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed fQtext" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Where can I watch?
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body fQcard">
-                  Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Resiliaflix account to watch instantly on the web at resiliaflix.com from your personal computer or on any internet-connected device that offers the Resiliaflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
-                  You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Resiliaflix with you anywhere.
-                </div>
-              </div>
-            </div>
-            <div class="card text-white bg-dark fQcard">
-              <div class="card-header" id="headingFour">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left fQtext" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    How do I cancel?
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body fQcard">
-                  Resiliaflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
-                </div>
-              </div>
-            </div>
-            <div class="card text-white bg-dark fQcard">
-              <div class="card-header" id="headingFive">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed fQtext" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    What can I watch on ResiliaFlix?
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                <div class="card-body fQcard">
-                  Resiliaflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
-                </div>
-              </div>
+      </div>
+    </div>
+
+    <br><br>
+    <!--START MEMBERSHIP-->
+    <div class="signature d-flex flex-column align-items-center justify-content-center p-3">
+      <h3> Ready to watch? Enter your email to create or restart your membership.</h3>
+      <br><br>
+      <div class="input-group mb-3 w-50 min-vw-75">
+        <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username"
+          aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline lets-btn" type="submit" id="button-addon2">Let's go!</button>
+        </div>
+      </div>
+    </div>
+
+    <!--BENEFITS-->
+    <div class="card-deck justify-content-center">
+      <div class="row justify-content-center">
+        <div class="card card-sizing mb-5 col-md-4 col-12 p-0">
+          <img src="srcs/assets/film.jpg" class="card-img-top" alt="filmroll">
+          <div class="card-body">
+            <h4 class="card-title">Enjoy on your TV.</h4>
+            <p class="card-text">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+            </p>
+          </div>
+        </div>
+        <div class="card card-sizing mb-5 col-md-4 col-12 p-0">
+          <img src="srcs/assets/film.jpg" class="card-img-top" alt="filmroll">
+          <div class="card-body">
+            <h4 class="card-title">Download your shows to watch offline.</h4>
+            <p class="card-text">Save your favorites easily and always have something to watch.</p>
+          </div>
+        </div>
+        <div class="card card-sizing mb-5 col-md-4 col-12 p-0">
+          <img src="srcs/assets/film.jpg" class="card-img-top" alt="filmroll">
+          <div class="card-body">
+            <h4 class="card-title">Watch everywhere.</h4>
+            <p class="card-text">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without
+              paying more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FAQ-->
+    <div class="fQuestions d-flex flex-md-column align-items-center justify-content-center p-3 mb-3">
+      <h2> Frequently Asked Questions.</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="card text-white bg-dark fQcard">
+          <div class="card-header fQcard-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed fQtext" type="button" data-toggle="collapse"
+                data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                What is ResiliaFlix?
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body fQcard">
+              Resiliaflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+              documentaries, and more on thousands of internet-connected devices.
+              You can watch as much as you want, whenever you want without a single commercial – all for one low monthly
+              price. There's always something new to discover and new TV shows and movies are added every week!
             </div>
           </div>
         </div>
-   </main>   
+        <div class="card text-white bg-dark fQcard">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed fQtext" type="button" data-toggle="collapse"
+                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                How much does ResiliaFlix cost?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body fQcard">
+              Watch Resiliaflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
+              monthly fee. Plans range from BRL21.90 to BRL45.90 a month. No extra costs, no contracts.
+            </div>
+          </div>
+        </div>
+        <div class="card text-white bg-dark fQcard">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed fQtext" type="button" data-toggle="collapse"
+                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Where can I watch?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body fQcard">
+              Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Resiliaflix account to watch
+              instantly on the web at resiliaflix.com from your personal computer or on any internet-connected device
+              that offers the Resiliaflix app, including smart TVs, smartphones, tablets, streaming media players and
+              game consoles.
+              You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch
+              while you're on the go and without an internet connection. Take Resiliaflix with you anywhere.
+            </div>
+          </div>
+        </div>
+        <div class="card text-white bg-dark fQcard">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left fQtext" type="button" data-toggle="collapse"
+                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                How do I cancel?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body fQcard">
+              Resiliaflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your
+              account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+            </div>
+          </div>
+        </div>
+        <div class="card text-white bg-dark fQcard">
+          <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed fQtext" type="button" data-toggle="collapse"
+                data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                What can I watch on ResiliaFlix?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="card-body fQcard">
+              Resiliaflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning
+              Netflix originals, and more. Watch as much as you want, anytime you want.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 
 <footer>
-    <!--SOCIAL MEDIA-->
-    <div>
-        <a href="https://twitter.com/resiliaflix" target="blank"><img src="srcs/assets/twitter.png" width="30" height="30"> </a>
-        <a href="https://facebook.com/resiliaflix" target="blank"><img src="srcs/assets/facebook.png" width="30" height="30"></a>
-        <a href="https://youtube.com/resiliaflix" target="blank"><img src="srcs/assets/youtube.png" width="30" height="30"></a>
-        <a href="https://instagram.com/resiliaflix" target="blank"><img src="srcs/assets/instagram.png" width="30" height="30"></a>         
+  <!--SOCIAL MEDIA-->
+  <div>
+    <a href="https://twitter.com/resiliaflix" target="blank"><img src="srcs/assets/twitter.png" width="30" height="30">
+    </a>
+    <a href="https://facebook.com/resiliaflix" target="blank"><img src="srcs/assets/facebook.png" width="30"
+        height="30"></a>
+    <a href="https://youtube.com/resiliaflix" target="blank"><img src="srcs/assets/youtube.png" width="30"
+        height="30"></a>
+    <a href="https://instagram.com/resiliaflix" target="blank"><img src="srcs/assets/instagram.png" width="30"
+        height="30"></a>
 
-    </div>  
-    <br><br>
-    <p>Resília LTDA &#169</p>
+  </div>
+  <br><br>
+  <p>Resília LTDA &#169</p>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="/srcs/javascript/loginNavbar.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="srcs/javascript/loginNavbar.js"></script>
+<script src="srcs/javascript/modalSearch.js"></script>
+<script src="srcs/javascript/carouselMovie.js"></script>
+
+<script src="srcs/javascript/controllers/ModalSearchController.js"></script>
+<script src="srcs/javascript/controllers/CarouselModalController.js"></script>
+<script src="srcs/javascript/models/ModalSearchModel.js"></script>
+<script src="srcs/javascript/views/ModalSearchView.js"></script>
+<script src="srcs/javascript/views/ModalSearchError.js"></script>
 
 </html>
