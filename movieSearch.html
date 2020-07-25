@@ -121,11 +121,11 @@
           <h3 class="pb-2">All your favorite movies and series in one place!</h3>
           <p class="pb-5">Here you can search through our full catalog, don't be shy.</p>
         </spam>
-        <div class="input-group">
-          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        <form class="input-group" id="search-form">
+          <input type="text" class="form-control" aria-label="Text input with dropdown button" id="search-input">
           <div class="input-group-append">
             <button class="btn lets-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">Search</button>
+              aria-expanded="false" id="search-btn">Search</button>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Movies</a>
               <a class="dropdown-item" href="#">Series</a>
@@ -133,19 +133,14 @@
               <a class="dropdown-item" href="#">Show me everything</a>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
     <br><br>
 
-    <div class="resultArea p-5 ml-5 mr-5">
-      <div class="card-deck">
-        <div class="card bg-dark text-white">
-          <img src="srcs/assets/ResiliaPoster.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay movieTitle">
-            <p class="">Title</p>
-          </div>
-        </div>
+    <div class="p-5 ml-5 mr-5">
+      <div class="card-deck" id="search-results-container">
+
       </div>
     </div>
 
@@ -215,5 +210,11 @@
   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="srcs/javascript/movieSearch.js"></script>
+
+<script src="srcs/javascript/controllers/SearchController.js"></script>
+<script src="srcs/javascript/models/SearchModel.js"></script>
+<script src="srcs/javascript/views/SearchView.js"></script>
 
 </html>
