@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    
+
 }
 
 .navbar {
@@ -115,6 +115,9 @@ main {
 
 .movieTitle {
     opacity: 0%;
+    text-decoration: none;
+    color: #ffc810;
+
 }
 
 .movieTitle:hover {
@@ -123,8 +126,10 @@ main {
     
 }
 
-.resultArea {
+.resultCard {
     display: none;
+    
+
 }
 
 
@@ -132,6 +137,7 @@ footer {
     position: absolute;
     display: flex;
     flex-flow: column;
+    justify-content: end;
     align-items: center;
     text-align: center;
     padding: 5px;

@@ -28,7 +28,7 @@ body {
     color: black;
     border-color: #ffc810;
     background-color: #ffc810;
-    width: 100%;
+    width: 155px;
 }
 
 .signUp-btn {
@@ -58,6 +58,17 @@ body {
 
 }
 
+.modal-header {
+    background-color: #ffc810;
+    color: black;
+
+}
+
+.modal-footer {
+    background-color: #131313;
+    color: #ffc810;
+}
+
 
 .moviesSelect {
     background-color: #131313;
@@ -85,6 +96,20 @@ body {
     font-size: 50px;
 }
 
+.memberSearch {
+    color: #131313;
+    max-width: 45%;
+
+}
+
+.poster {
+    display: block;
+    margin: 5px auto;
+    min-width: 15%;
+    max-width: 100%;
+
+}
+
 .signature {
     color: #ffc810;
     align-items: center;
@@ -109,7 +134,7 @@ body {
 .drop-btn {
     display: flex;
     flex-flow: column;
-    align-items: center;
+    width: 100%;
 }
 
 footer {
@@ -150,6 +175,10 @@ footer {
         left: 0;
         right: auto;
         
+    }
+
+    .enter-btn {
+        width: 100%;
     }
 
 }
