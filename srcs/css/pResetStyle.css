@@ -17,9 +17,14 @@ main {
 }
 
 .sign-btn {
-    color: #ffc810;
-    border-color: black;
     background-color: black;
+    border-color: none;
+    
+}
+
+.sign-btn:hover {
+    background-color: #ffc810;
+    border-color: #131313;
     
 }
 
@@ -43,6 +48,57 @@ main {
 
 }
 
+.signUp-btn a {
+    text-decoration: none;
+    color: #ffc810;
+
+}
+
+.signUp-btn:hover {
+    background-color: #ffc810;
+    color: black;
+    width: 100%;
+    
+}
+
+.signUp-btn a:hover {
+    text-decoration: none;
+    color: black;
+
+}
+
+.modal-header {
+    background-color: #ffc810;
+    color: black;
+
+}
+
+.modal-footer {
+    background-color: #131313;
+    color: #ffc810;
+}
+
+
+
+.memberSearch {
+    color: #131313;
+    max-width: 45%;
+
+}
+
+.lets-btn {
+    color: black;
+    background-color: #ffc810;
+    border: none;
+    
+}
+
+.lets-btn:hover {
+    color: #ffc810;
+    background-color: black;
+    border-color: #ffc810;
+}
+
 
 .memberContact {
     color: #ffc810;
@@ -63,13 +119,9 @@ main {
     display: flex;
     flex-flow: column;
     align-items: center;
+    width: 155px;
 }
 
-.modal-footer {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
 
 footer {
     position: absolute;
@@ -96,12 +148,18 @@ footer {
         width: 100%;
     }
 
-    .modal-sizing {
-        width: 90%;
-    }
-
     .memberContact {
         min-width: auto;
+    }
+
+    .dropdown {
+        width: 98% !important;
+    }
+
+    .dropdown-menu-right {
+        left: 0;
+        right: auto;
+        
     }
 
 }

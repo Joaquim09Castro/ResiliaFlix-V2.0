@@ -45,6 +45,31 @@ main {
 
 }
 
+.signUp-btn a {
+    text-decoration: none;
+    color: #ffc810;
+
+}
+
+.signUp-btn:hover {
+    background-color: #ffc810;
+    color: black;
+    width: 100%;
+    
+}
+
+.signUp-btn a:hover {
+    text-decoration: none;
+    color: black;
+
+}
+
+.searchArea {
+    color: #ffc810;
+    background-color: #131313;
+    width: 60%;
+}
+
 .memberSearch {
     color: #ffc810;
     min-width: 600px;
@@ -60,6 +85,19 @@ main {
 
 }
 
+.lets-btn {
+    color: black;
+    background-color: #ffc810;
+    border: none;
+    
+}
+
+.lets-btn:hover {
+    color: #ffc810;
+    background-color: black;
+    border-color: #ffc810;
+}
+
 .send-btn {
     color: black;
     border-color: #ffc810;
@@ -72,6 +110,21 @@ main {
     display: flex;
     flex-flow: column;
     align-items: center;
+    width: 155px;
+}
+
+.movieTitle {
+    opacity: 0%;
+}
+
+.movieTitle:hover {
+    opacity: 100%;
+    
+    
+}
+
+.resultArea {
+    display: none;
 }
 
 
@@ -108,11 +161,25 @@ footer {
 
     .resultArea {
         display: flex;
-        flex-flow: column;
+        flex-flow: column;  
+    }
 
+    .dropdown {
+        width: 98% !important;
+    }
+
+    .dropdown-menu-right {
+        left: 0;
+        right: auto;
         
     }
 
+    .resultArea {
+        display: none;
+    
+    }
 
-
+    .drop-btn {
+        width: 100%;
+    }
 }

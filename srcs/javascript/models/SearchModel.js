@@ -1,4 +1,4 @@
-class BuscaModel {
+class SearchModel {
   constructor(requestJson) {
     this._title = requestJson.Title;
     this._year = requestJson.Year;

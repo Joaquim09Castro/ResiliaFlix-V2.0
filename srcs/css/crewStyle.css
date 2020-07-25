@@ -17,10 +17,30 @@ main {
 }
 
 .sign-btn {
-    color: #ffc810;
-    border-color: black;
     background-color: black;
+    border-color: none;
     
+}
+
+.sign-btn:hover {
+    background-color: #ffc810;
+    border-color: #131313;
+    
+}
+
+
+
+.lets-btn {
+    color: black;
+    background-color: #ffc810;
+    border: none;
+    
+}
+
+.lets-btn:hover {
+    color: #ffc810;
+    background-color: black;
+    border-color: #ffc810;
 }
 
 .passwordReset {
@@ -42,6 +62,26 @@ main {
     width: 100%;
 
 }
+
+.signUp-btn a {
+    text-decoration: none;
+    color: #ffc810;
+
+}
+
+.signUp-btn:hover {
+    background-color: #ffc810;
+    color: black;
+    width: 100%;
+    
+}
+
+.signUp-btn a:hover {
+    text-decoration: none;
+    color: black;
+
+}
+
 
 .Crew {
     color: #ffc810;
@@ -67,6 +107,14 @@ main {
 
 }
 
+.contact {
+    color: #ffc810;
+}
+
+.contact:hover {
+    color: #ffc810;
+}
+
 .send-btn {
     color: black;
     border-color: #ffc810;
@@ -75,17 +123,40 @@ main {
     
 }
 
-.modal-btn {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+.modal-header {
+    background-color: #ffc810;
+    color: black;
+
 }
 
 .modal-footer {
+    background-color: #131313;
+    color: #ffc810;
+}
+
+
+
+.memberSearch {
+    color: #131313;
+    max-width: 45%;
+
+}
+
+.poster {
+    display: block;
+    margin: 5px auto;
+    min-width: 15%;
+    max-width: 100%;
+
+}
+
+.drop-btn {
     display: flex;
     flex-flow: column;
     align-items: center;
+    width: 155px;
 }
+
 
 footer {
     position: absolute;
@@ -112,12 +183,21 @@ footer {
         width: 100%;
     }
 
-    .modal-sizing {
-        width: 90%;
-    }
-
     .memberContact {
         min-width: auto;
     }
 
+    .dropdown {
+        width: 98% !important;
+    }
+
+    .dropdown-menu-right {
+        left: 0;
+        right: auto;
+        
+    }
+
+    .drop-btn {
+        width: 100%;
+    }
 }
