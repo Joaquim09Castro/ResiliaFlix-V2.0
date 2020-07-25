@@ -3,19 +3,24 @@ body {
     
 }
 
-
 .navbar {
     background-color: #ffc810;
 }
+
 .nav-text {
     font-family: 'Grand Hotel', cursive;
     font-size: 30px;
 }
 
 .sign-btn {
-    color: #ffc810;
-    border-color: black;
+    background-color: black;
+    border-color: none;
+    
+}
+
+.sign-btn:hover {
     background-color: #ffc810;
+    border-color: #131313;
     
 }
 
@@ -68,19 +73,50 @@ body {
     object-position: 0 -15%;
 }
 
-.signature {
-    color: #ffc810;
-    align-items: center;
-    
+.memberSearch {
+    color: #131313;
+    max-width: 45%;
+
 }
- 
-.signature h3 {
-    text-align: center;
+
+.poster {
+    display: block;
+    margin: 5px auto;
+    min-width: 15%;
+    max-width: 100%;
+
+}
+
+.userArea {
+    color: #ffc810;
+    background-color: #131313;
+}
+
+.moviesSelect {
+    color: #ffc810;
+    min-width: 600px;
+    background-color: #131313;
+
+}
+
+.movielist {
+    color: #ffc810;
+}
+
+.movieTitle {
+    opacity: 0%;
+}
+
+.movieTitle:hover {
+    opacity: 100%;
+    
+    
 }
 
 .lets-btn {
     color: black;
     background-color: #ffc810;
+    border: none;
     
 }
 
@@ -90,65 +126,12 @@ body {
     border-color: #ffc810;
 }
 
-.card-img-top{
-    height: 100px;
-}
 
-.card-sizing {
-    min-height: 18rem;
-    max-width: 18rem;
-}
-
-
-.fQuestions {
-    
-    color: #ffc810;
-    flex-flow: column;
-    text-align: center;
-    
-    
-}
-.card-header {
-    background-color: #131313;
-
-}
-
-.fQuestions h2 {
-    font-weight: bolder;
-    
-}
-
-.fQcard {
-    color: white;
-    max-width: 50rem;
-    min-width: 50rem;
-    background-color: #131313;  
-    flex-flow: column;
-}
-
-.fQcard:active{
-    border: none
-}
-
-.fQtext {
-    color: #ffc810;
-    text-decoration: none;
-    font-size: 22px;
-    background-color: #131313;
-
-
-}
-
-.fQtext:hover {
-    color: #ffc810;
-    text-decoration: none;
-    font-weight: bold
-
-}
 .drop-btn {
     display: flex;
     flex-flow: column;
     align-items: center;
+    width: 155px;
 }
 
 
@@ -177,8 +160,19 @@ footer {
         width: 100%;
     }
 
-    .fQcard {
-        min-width: auto;
+
+    .userArea {
+        flex-flow: column;
+
+    }
+
+    .memberSearch {
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    .modal-dialog {
+        max-width: 92%;
     }
 
     .dropdown {
@@ -189,6 +183,10 @@ footer {
         left: 0;
         right: auto;
         
+    }
+
+    .drop-btn {
+        width: 100%;
     }
 
 }

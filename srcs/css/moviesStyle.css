@@ -3,6 +3,14 @@ body {
     margin-top: 100px;
 }
 
+#mobileView {
+    display: none !important;
+}
+
+#desktopView {
+    display: inline !important;
+}
+
 .navbar {
     background-color: #ffc810;
 }
@@ -29,6 +37,13 @@ body {
     border-color: #ffc810;
     background-color: #ffc810;
     width: 100%;
+}
+
+.enter-btn:hover {
+    color: #ffc810;
+    border-color: #ffc810;
+    background-color: #131313;
+    
 }
 
 .signUp-btn {
@@ -85,21 +100,33 @@ body {
     font-size: 50px;
 }
 
-.signature {
-    color: #ffc810;
-    align-items: center;
-    
-}
- 
-.signature h3 {
-    text-align: center;
-}
+
 
 .lets-btn {
-    color: #ffc810;
-    border-color: #ffc810;
+    color: black;
+    background-color: #ffc810;
+    border: none;
     
 }
+
+.lets-btn:hover {
+    color: #ffc810;
+    background-color: black;
+    border-color: #ffc810;
+}
+
+.modal-header {
+    background-color: #ffc810;
+    color: black;
+
+}
+
+.modal-footer {
+    background-color: #131313;
+    color: #ffc810;
+}
+
+
 
 .movielist {
     color: #ffc810
@@ -110,6 +137,11 @@ body {
     display: flex;
     flex-flow: column;
     align-items: center;
+    width: 155px;
+}
+
+.membership {
+    color: #ffc810
 }
 
 footer {
@@ -126,6 +158,8 @@ footer {
     width: 100%;
     box-sizing: border-box;
   }
+
+
 
 @media (max-width: 850px) {
 
@@ -152,5 +186,17 @@ footer {
         
     }
 
+    .drop-btn {
+        width: 100%;
+    }
+    }
+
+    #desktopView {
+        display: none !important;
+    }
+
+    #mobileView {
+        display: inline !important;
+    }
 }
 
