@@ -36,6 +36,13 @@ body {
     width: 155px;
 }
 
+.enter-btn:hover {
+    color: #ffc810;
+    border-color: #ffc810;
+    background-color: #131313;
+    
+}
+
 .signUp-btn {
     color: #ffc810;
     border-color: black;

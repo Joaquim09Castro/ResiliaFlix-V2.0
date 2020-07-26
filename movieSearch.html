@@ -28,7 +28,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item ">
+        <li class="nav-item active">
           <a class="nav-link" href="index.htm">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
@@ -38,6 +38,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="movies.html">Movies</a>
+            <a class="dropdown-item" href="series.html">Series</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="news.html">What's next?</a>
           </div>
@@ -120,34 +121,32 @@
           <h3 class="pb-2">All your favorite movies and series in one place!</h3>
           <p class="pb-5">Here you can search through our full catalog, don't be shy.</p>
         </spam>
-        <div class="input-group">
-          <input type="text" class="form-control" aria-label="Text input with button">
+        <form class="input-group" id="search-form">
+          <input type="text" class="form-control" aria-label="Text input with dropdown button" id="search-input">
           <div class="input-group-append">
-            <button class="btn lets-btn" type="button" aria-expanded="false">Search</button>
+            <button class="btn lets-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" id="search-btn">Search</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Movies</a>
+              <a class="dropdown-item" href="#">Series</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Show me everything</a>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
-
     <br><br>
 
-    <!--RESULT AREA-->
+    <div class="p-5 ml-5 mr-5">
+      <div class="card-deck" id="search-results-container">
 
-    <div class="row row-cols-1 row-cols-md-4 resultArea p-5 ml-5 mr-5">
-      <div class="col mb-4">
-        <div class="card bg-dark text-white resultCard">
-          <a href="#" data-toggle="modal" data-target="#infoMovies">
-            <img src="srcs/assets/ResiliaPoster.jpg" class="card-img" alt="...">
-            <div class="card-img-overlay movieTitle">
-              <p class="">Title</p>
-            </div>
-          </a>
-        </div>
       </div>
     </div>
 
 
 
+    </div>
     <br>
     <!--INFOMOVIES MODAL-->
     <div class="modal fade" id="infoMovies" tabindex="-1" role="dialog" aria-labelledby="infoMoviesLabel"
@@ -211,5 +210,11 @@
   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="srcs/javascript/movieSearch.js"></script>
+
+<script src="srcs/javascript/controllers/SearchController.js"></script>
+<script src="srcs/javascript/models/SearchModel.js"></script>
+<script src="srcs/javascript/views/SearchView.js"></script>
 
 </html>
