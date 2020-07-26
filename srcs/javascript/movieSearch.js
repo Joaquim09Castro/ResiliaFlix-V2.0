@@ -1,5 +1,5 @@
 const searchInfo = {
-  url: "http://www.omdbapi.com/?apikey=aedc9fba&type=movie",
+  url: "https://www.omdbapi.com/?apikey=aedc9fba&type=movie",
   searchForm: document.querySelector("#search-form"),
   searchInput: document.querySelector("#search-input"),
   searchBtn: document.querySelector("#search-btn"),
