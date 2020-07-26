@@ -7,11 +7,11 @@ class ViewCep {
 
   static displayAdress(ZipObj) {
 
-    let streetView = document.querySelector("#street");
-    let numberView = document.querySelector("#complement");
-    let cityView = document.querySelector("#city");
-    let stateView = document.querySelector("#state");
-    let districtView = document.querySelector("#district");
+    const streetView = document.querySelector("#street");
+    const numberView = document.querySelector("#complement");
+    const cityView = document.querySelector("#city");
+    const stateView = document.querySelector("#state");
+    const districtView = document.querySelector("#district");
 
     streetView.value = ZipObj.street;
     numberView.value = ZipObj.complement;
