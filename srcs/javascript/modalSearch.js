@@ -1,5 +1,5 @@
 const modalInfo = {
-  url: "http://www.omdbapi.com/?apikey=aedc9fba&type=movie",
+  url: "https://www.omdbapi.com/?apikey=aedc9fba&type=movie",
   btnSearch: $("#button-search"),
   searchField: $("#movie-search"),
   modal: $("#modal-body"),
