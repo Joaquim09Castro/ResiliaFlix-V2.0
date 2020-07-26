@@ -3,6 +3,14 @@ body {
     margin-top: 100px;
 }
 
+#mobileView {
+    display: none !important;
+}
+
+#desktopView {
+    display: inline !important;
+}
+
 .navbar {
     background-color: #ffc810;
 }
@@ -28,7 +36,14 @@ body {
     color: black;
     border-color: #ffc810;
     background-color: #ffc810;
-    width: 100%;
+    width: 155px;
+}
+
+.enter-btn:hover {
+    color: #ffc810;
+    border-color: #ffc810;
+    background-color: #131313;
+    
 }
 
 .signUp-btn {
@@ -58,6 +73,17 @@ body {
 
 }
 
+.modal-header {
+    background-color: #ffc810;
+    color: black;
+
+}
+
+.modal-footer {
+    background-color: #131313;
+    color: #ffc810;
+}
+
 
 .moviesSelect {
     background-color: #131313;
@@ -85,21 +111,44 @@ body {
     font-size: 50px;
 }
 
+.memberSearch {
+    color: #131313;
+    max-width: 45%;
+
+}
+
+.poster {
+    display: block;
+    margin: 5px auto;
+    min-width: 15%;
+    max-width: 100%;
+
+}
+
 .signature {
     color: #ffc810;
     align-items: center;
     
 }
- 
-.signature h3 {
-    text-align: center;
+
+.lets-btn:hover {
+    color: #ffc810;
+    background-color: black;
+    border-color: #ffc810;
 }
 
-.lets-btn {
-    color: #ffc810;
-    border-color: #ffc810;
-    
+.modal-header {
+    background-color: #ffc810;
+    color: black;
+
 }
+
+.modal-footer {
+    background-color: #131313;
+    color: #ffc810;
+}
+
+
 
 .movielist {
     color: #ffc810
@@ -109,7 +158,7 @@ body {
 .drop-btn {
     display: flex;
     flex-flow: column;
-    align-items: center;
+    width: 100%;
 }
 
 footer {
@@ -126,6 +175,8 @@ footer {
     width: 100%;
     box-sizing: border-box;
   }
+
+
 
 @media (max-width: 850px) {
 
@@ -150,6 +201,10 @@ footer {
         left: 0;
         right: auto;
         
+    }
+
+    .enter-btn {
+        width: 100%;
     }
 
 }

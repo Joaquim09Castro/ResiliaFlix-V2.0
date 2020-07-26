@@ -25,6 +25,7 @@ main {
 
 .memberContact {
     color: #ffc810;
+    
 
 }
 
@@ -36,6 +37,20 @@ main {
     
 }
 
+.send-btn:hover {
+    background-color: #131313;
+    color: #ffc810;
+    border-color: #ffc810;
+}
+
+.passwordReset {
+    color: #ffc810;
+    
+}
+
+.passwordReset:hover {
+    color: #ffc810;
+}
 
 footer {
     position: absolute;

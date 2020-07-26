@@ -16,52 +16,6 @@ main {
     font-size: 30px;
 }
 
-.sign-btn {
-    color: #ffc810;
-    border-color: black;
-    background-color: black;
-    
-}
-
-.passwordReset {
-    text-decoration: underline;
-    color: black;
-}
-
-.enter-btn {
-    color: black;
-    border-color: #ffc810;
-    background-color: #ffc810;
-    width: 100%;
-}
-
-.signUp-btn {
-    color: #ffc810;
-    border-color: black;
-    background-color: black;
-    width: 100%;
-
-}
-
-.signUp-btn a {
-    text-decoration: none;
-    color: #ffc810;
-
-}
-
-.signUp-btn:hover {
-    background-color: #ffc810;
-    color: black;
-    width: 100%;
-    
-}
-
-.signUp-btn a:hover {
-    text-decoration: none;
-    color: black;
-
-}
-
 
 .memberSignUp {
     color: #ffc810;
@@ -83,12 +37,28 @@ main {
     
 }
 
-.drop-btn {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+.lets-btn {
+    color: black;
+    background-color: #ffc810;
+    border: none;
+    
 }
 
+.lets-btn:hover {
+    color: #ffc810;
+    background-color: black;
+    border-color: #ffc810;
+}
+
+.terms {
+    text-decoration: none;
+    color: #ffc810;
+}
+
+.terms:hover{
+    color: #ffc810;
+
+}
 
 
 
@@ -109,20 +79,13 @@ footer {
 
 @media (max-width: 850px) {
 
-    .sign-btn {
-        width: 100%;
-    }
-
-    .search-btn {
-        width: 100%;
-    }
-
-    .modal-sizing {
-        width: 90%;
-    }
-
-    .memberContact {
+    
+    .memberSignUp {
         min-width: auto;
+    }
+
+    .headForm {
+        flex-flow: column;
     }
 
 }

@@ -1,16 +1,10 @@
 body {
     background-color: black;
-
+    
 }
 
 .navbar {
     background-color: #ffc810;
-
-
-}
-
-main {
-    margin-top: 100px;
 }
 
 .nav-text {
@@ -19,9 +13,14 @@ main {
 }
 
 .sign-btn {
-    color: #ffc810;
-    border-color: black;
     background-color: black;
+    border-color: none;
+    
+}
+
+.sign-btn:hover {
+    background-color: #ffc810;
+    border-color: #131313;
     
 }
 
@@ -30,7 +29,6 @@ main {
     color: black;
 }
 
-
 .enter-btn {
     color: black;
     border-color: #ffc810;
@@ -38,19 +36,12 @@ main {
     width: 100%;
 }
 
-.enter-btn:hover {
-    color: #ffc810;
-    border-color: #ffc810;
-    background-color: #131313;
-    
-}
-
 .signUp-btn {
     color: #ffc810;
     border-color: black;
     background-color: black;
     width: 100%;
-
+    
 }
 
 .signUp-btn a {
@@ -72,25 +63,54 @@ main {
 
 }
 
-.searchArea {
-    color: #ffc810;
-    background-color: #131313;
-    width: 60%;
+.img-sizing {
+    object-fit: cover;
+    height: 600px;
+   
+}
+
+.img-position {
+    object-position: 0 -15%;
 }
 
 .memberSearch {
-    color: #ffc810;
-    min-width: 600px;
-    background-color: #131313;
+    color: #131313;
+    max-width: 45%;
 
 }
 
 .poster {
     display: block;
     margin: 5px auto;
-    min-width: 50%;
+    min-width: 15%;
     max-width: 100%;
 
+}
+
+.userArea {
+    color: #ffc810;
+    background-color: #131313;
+}
+
+.moviesSelect {
+    color: #ffc810;
+    min-width: 600px;
+    background-color: #131313;
+
+}
+
+.movielist {
+    color: #ffc810;
+}
+
+.movieTitle {
+    opacity: 0%;
+}
+
+.movieTitle:hover {
+    opacity: 100%;
+    
+    
 }
 
 .lets-btn {
@@ -106,13 +126,6 @@ main {
     border-color: #ffc810;
 }
 
-.send-btn {
-    color: black;
-    border-color: #ffc810;
-    background-color: #ffc810;
-    width: 100%;
-    
-}
 
 .drop-btn {
     display: flex;
@@ -121,24 +134,11 @@ main {
     width: 155px;
 }
 
-.movieTitle {
-    opacity: 0%;
-    text-decoration: none;
-    color: #ffc810;
-
-}
-
-.movieTitle:hover {
-    opacity: 100%;
-    
-    
-}
 
 footer {
     position: absolute;
     display: flex;
     flex-flow: column;
-    justify-content: end;
     align-items: center;
     text-align: center;
     padding: 5px;
@@ -161,14 +161,18 @@ footer {
     }
 
 
+    .userArea {
+        flex-flow: column;
+
+    }
+
     .memberSearch {
-        min-width: auto;
+        max-width: 100%;
         padding: 25px;
     }
 
-    .resultArea {
-        display: flex;
-        flex-flow: column;  
+    .modal-dialog {
+        max-width: 92%;
     }
 
     .dropdown {
@@ -181,12 +185,9 @@ footer {
         
     }
 
-    .resultArea {
-        display: none;
-    
-    }
-
     .drop-btn {
         width: 100%;
     }
+
 }
+
