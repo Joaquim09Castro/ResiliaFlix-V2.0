@@ -70,7 +70,7 @@
                             <div class="col-md-6 mb-3">
                                 <label for="validationDefault01">First name</label>
 
-                                <input type="text" class="form-control" id="firstname" placeholder="Your name">
+                                <input type="text" class="form-control" id="firstname" placeholder="Your name" required>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="validationDefault02">Last name</label>
@@ -85,16 +85,16 @@
                                 <div class="input-group-text">@</div>
                             </div>
                             <input type="text" class="form-control" id="inlineFormInputGroupUsername2"
-                                placeholder="Username">
+                                placeholder="Username" required>
                         </div>
 
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
-                                <label for="validationDefault01">CPF</label>
+                                <label for="validationDefault01">RG</label>
 
-                                <input type="text" class="form-control" id="identification" placeholder="Only numbers">
+                                <input type="text" class="form-control" id="identification" placeholder="Only numbers" required>
 
-                                <small id="messagerg"> </small>
+                                <small id="messagerg" class="alert-color"> </small>
 
                             </div>
                             <div class="col-md-6 mb-3">
@@ -104,7 +104,7 @@
                                 <input type="text" class="form-control" id="email" placeholder="Your email" <input
                                     type="text" class="form-control" id="validationDefault02" placeholder="Your email"
                                     required>
-                                <small id="messagemail"> </small>
+                                <small id="messagemail" class="alert-color"> </small>
                             </div>
                         </div>
 
@@ -133,8 +133,8 @@
                             <div class="col-md-6 mb-3">
                                 <label for="validationDefault02">Zip Code</label>
 
-                                <input type="text" class="form-control mb-2" placeholder="00000-000" id="zipcode">
-                                <small id="zipcodecheck"> </small>
+                                <input type="text" class="form-control mb-2" placeholder="00000-000" id="zipcode" required>
+                                <small id="zipcodecheck" class="alert-color"> </small>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <button class="btn send-btn" type="button" id="submitadress">Search Zipcode</button>
@@ -144,7 +144,7 @@
                         <div class="form-group">
                             <label for="inputAddress">Address</label>
 
-                            <input type="text" class="form-control" id="street" placeholder="1234 Main St">
+                            <input type="text" class="form-control" id="street" placeholder="1234 Main St" required>
                         </div>
                         <div class="form-group">
                             <label for="inputAddress2">Address 2</label>

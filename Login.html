@@ -61,24 +61,26 @@
           
           <form class="p-3">
             <div class="form-group">
-              <label for="userEmail">Email address</label>
-              <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+              <label for="user-mail">Email address</label>              
+              <input type="email" class="form-control" id="user-mail" aria-describedby="emailHelp">
+              <small id="message-email" class="alert-color"></small>
             </div>
 
             <div class="form-group">
-              <label for="userPassword">Password</label>
-              <input type="password" class="form-control" id="userPassword">
+              <label for="user-password">Password</label>
+              <input type="password" class="form-control" id="user-password">
+              <small id="message-password" class="alert-color"> </small>
               <small id="emailHelp" class="form-text text-muted mb-3"> <a class="passwordReset" href="passwordReset.html"> Forgot your password? </a></small>
               <div class="form-group form-check m-1">
                 <input type="checkbox" class="form-check-input" id="rememberMe">
                 <label class="form-check-label" for="rememberMe">Remember me</label>
               </div>  
             </div>
-            <a href="#" role="button" class="btn btn-primary send-btn">Enter</a></button>
+            <button type="submit" class="btn btn-primary send-btn" id="button-login">Enter</button>
           </form>
-          <div class="modal-footer d-flex justify-content-center">
+          <div class="modal-footer d-flex justify-content-center flex-column">
             <p>Problems in login?</p>
-            <a href="#" role="button" class="btn btn-primary send-btn">Help me</a></button>
+            <a href="#" role="button" class="btn btn-primary send-btn">Help me</a>
           </div>
         
 
@@ -106,5 +108,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="/srcs/javascript/loginPage.js"></script>
 
 </html>

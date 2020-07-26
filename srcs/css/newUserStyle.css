@@ -1,91 +1,88 @@
 body {
-    background-color: black;
-    
+	background-color: black;
 }
 
 main {
-    margin-top: 100px;
+	margin-top: 100px;
 }
 
 .navbar {
-    background-color: #ffc810;
+	background-color: #ffc810;
 }
 
 .nav-text {
-    font-family: 'Grand Hotel', cursive;
-    font-size: 30px;
+	font-family: "Grand Hotel", cursive;
+	font-size: 30px;
 }
 
-
 .memberSignUp {
-    color: #ffc810;
-    min-width: 600px;
-    background-color: #131313;
-
+	color: #ffc810;
+	min-width: 600px;
+	background-color: #131313;
 }
 
 .logo {
-    width: 150px;
+	width: 150px;
 }
 
 .send-btn {
-    color: black;
-    border-color: #ffc810;
-    background-color: #ffc810;
-    width: 100%;
-    margin-top: 32px;
-    
+	color: black;
+	border-color: #ffc810;
+	background-color: #ffc810;
+	width: 100%;
+	margin-top: 32px;
 }
 
 .lets-btn {
-    color: black;
-    background-color: #ffc810;
-    border: none;
-    
+	color: black;
+	background-color: #ffc810;
+	border: none;
 }
 
 .lets-btn:hover {
-    color: #ffc810;
-    background-color: black;
-    border-color: #ffc810;
+	color: #ffc810;
+	background-color: black;
+	border-color: #ffc810;
 }
 
 .terms {
-    text-decoration: none;
-    color: #ffc810;
+	text-decoration: none;
+	color: #ffc810;
 }
 
-.terms:hover{
-    color: #ffc810;
-
+.terms:hover {
+	color: #ffc810;
 }
 
+.alert-color {
+	color: red;
+}
 
+small {
+	font-style: italic;
+}
 
 footer {
-    position: absolute;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
-    padding-top: 10px;
-    background-color: #ffc810;
-    color: black;
-    margin-bottom: 0px;
-    width: 100%;
-    box-sizing: border-box;
-  }
+	position: absolute;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+	padding: 5px;
+	padding-top: 10px;
+	background-color: #ffc810;
+	color: black;
+	margin-bottom: 0px;
+	width: 100%;
+	box-sizing: border-box;
+}
 
 @media (max-width: 850px) {
+	.memberSignUp {
+		min-width: auto;
+	}
 
-    
-    .memberSignUp {
-        min-width: auto;
-    }
-
-    .headForm {
-        flex-flow: column;
-    }
-
+	.headForm {
+		flex-flow: column;
+	}
 }
