@@ -6,7 +6,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="srcs/assets/logo2.PNG">
     <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="srcs/css/404Style.css">
+    <link rel="stylesheet" href="srcs/css/pResetStyle.css">
     <title>404 - ResíliaFlix</title>
 </head>
 
@@ -25,7 +25,7 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
+            <li class="nav-item active">
               <a class="nav-link" href="index.htm">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
@@ -34,6 +34,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="movies.html">Movies</a>
+                <a class="dropdown-item" href="series.html">Series</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="news.html">What's next?</a>
               </div>
@@ -44,21 +45,57 @@
             </li>
 
           </ul>
-    
+ 
+          <form class="form-inline my-2 my-lg-0 mr-3">
+            <input class="form-control mr-sm-2 mb-1" type="search" placeholder="Your favorite movie here" aria-label="Search">
+            <button class="btn btn-outline-dark mb-1 mr-2 search-btn" type="submit">Search</button>
+                  <div class="dropdown">
+                    <button class="btn btn-dark sign-btn mb-1 mr-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Sign in
+                    </button>
+                    <!--SIGN IN DROPDOWN MENU-->
+                    <div class="dropdown-menu dropdown-menu-right p-5" aria-labelledby="dropdownMenuButton">
+                      <h3>Hello! :) </h3>
+                      <form>
+                        <div class="form-group">
+                          <label for="userEmail">Email address</label>
+                          <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+                        </div>
+                
+                        <div class="form-group">
+                          <label for="userPassword">Password</label>
+                          <input type="password" class="form-control" id="userPassword">
+                          <small id="emailHelp" class="form-text text-muted"> <a class="passwordReset" href="passwordReset.html"> Forgot your password? </a></small>
+                        </div>
+                
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="rememberMe">
+                          <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                
+                        <button type="button" class="btn enter-btn drop-btn">Enter</button>
+
+                        <div class="dropdown-divider"></div>
+
+                        Not a member yet?
+                        <button type="button" class="btn btn-primary signUp-btn">Sign up now</button>
+                
+                      </form>
+                    </div>
+                  </div>
+          </form>
+       </div>    
      </nav>
   </header>
 
     <main>     
-      <!-- ERROR MSG-->
-      <div class=" d-flex justify-content-center align-items-center flex-column">
-        <div class="memberContact  p-5 d-flex flex-column align-items-center">
-          <h3>Ops! We couldn't find what you're looking for.</h3>
-          <br>
-          <p>Try refresh the page or go make some popcorn while we fix things up!</p>
-          <img src="srcs/assets/Popcorn.png" width="250">
+      <!-- MEMBER PASSWORD RESET-->
+      <div class="container d-flex justify-content-center">
+        <div class="memberContact row m-5 p-5">
+          <h3>Can't sign in? Let's reset your password.</h3>
           <div>
-            
-            <a type="button" href="index.htm" class="btn send-btn">Refresh</a>
+            <img src="srcs/assets/Popcorn.png">
+            <button type="submit" class="btn send-btn">Send</button>
 
             
           </div>

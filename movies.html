@@ -19,7 +19,7 @@
       <a class="navbar-brand nav-text" href="index.htm">
         <img src="srcs/assets/logo2.PNG" width="35" height="35" class="d-inline-block align-center" alt="ResiliaFlix"
           loading="lazy">
-        Resíliaflix
+        ResíliaFlix
       </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -29,16 +29,17 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.htm">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               What to watch?
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="movies.html">Movies</a>
+              <a class="dropdown-item" href="series.html">Series</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="news.html">What's next?</a>
             </div>
@@ -50,602 +51,260 @@
 
         </ul>
 
-        <form class="form-inline my-2 my-lg-0 ">
-          <form>
-            <input class="form-control mb-1" type="search" placeholder="Your favorite movie" aria-label="Search"
-              id="movie-search">
-            <button class="btn btn-outline-dark mb-1 mr-2 search-btn" type="button" id="button-search"
-              data-toggle="modal" data-target="#searchMovies">Search</button>
-          </form>
-
+        <form class="form-inline my-2 my-lg-0 mr-3">
+          <input class="form-control mr-sm-2 mb-1" type="search" placeholder="Your favorite movie here"
+            aria-label="Search">
+          <button class="btn btn-outline-dark mb-1 mr-2 search-btn" type="submit">Search</button>
           <div class="dropdown">
-            <button class="btn btn-dark sign-btn mb-1 mr-2 dropdown-toggle signIn-btn" type="button"
-              id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="srcs/assets/user.png" width="25" height="25">
+            <button class="btn btn-dark sign-btn mb-1 mr-2 dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sign in
             </button>
 
             <!--SIGN IN DROPDOWN MENU-->
-            <div class="dropdown-menu dropdown-menu-right p-3" aria-labelledby="dropdownMenuButton">
+            <div class="dropdown-menu dropdown-menu-right p-5" aria-labelledby="dropdownMenuButton">
               <h3>Hello! :) </h3>
               <form>
-                <button type="button" class="btn enter-btn" id="button-login" data-toggle="modal"
-                  data-target="#logIn">Enter</button>
-                <div class="dropdown-divider"></div>
-                Not a member yet?
-                <a href="newUser.html" role="button" class="btn btn-primary signUp-btn">Sign up now</a></button>
-
-    <!-- LOGIN MODAL-->
-    <div class="modal fade" id="logIn" tabindex="-1" role="dialog" aria-labelledby="logInLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm ">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="logInLabel">Login</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body p-0">
-            <form class="p-3">
-              <div class="form-group">
-                <label for="userEmail">Email address</label>
-                <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
-              </div>
-
-              <div class="form-group">
-                <label for="userPassword">Password</label>
-                <input type="password" class="form-control" id="userPassword">
-                <small id="emailHelp" class="form-text text-muted mb-3"> <a class="passwordReset"
-                    href="passwordReset.html"> Forgot your password? </a></small>
-                <div class="form-group form-check m-1">
-                  <input type="checkbox" class="form-check-input" id="rememberMe">
-                  <label class="form-check-label" for="rememberMe">Remember me</label>
+                <div class="form-group">
+                  <label for="userEmail">Email address</label>
+                  <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
                 </div>
-              </div>
-              <a href="#" role="button" class="btn btn-primary enter-btn">Enter</a></button>
-            </form>
-            <div class="modal-footer d-flex justify-content-center">
-              <p>Problems in login?</p>
-              <a href="#" role="button" class="btn btn-primary lets-btn">Help me</a></button>
+
+                <div class="form-group">
+                  <label for="userPassword">Password</label>
+                  <input type="password" class="form-control" id="userPassword">
+                  <small id="emailHelp" class="form-text text-muted"> <a class="passwordReset"
+                      href="passwordReset.html"> Forgot your password? </a></small>
+                  <div class="form-group form-check m-1">
+                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                  </div>
+                </div>
+
+                <button type="button" class="btn enter-btn drop-btn">Enter</button>
+
+                <div class="dropdown-divider"></div>
+
+                Not a member yet?
+                <button type="button" class="btn btn-primary signUp-btn"> <a href="newUser.html">Sign up now</a></button>
+
+              </form>
             </div>
           </div>
-        </div>
+        </form>
       </div>
-    </div>
+    </nav>
+  </header>
 
   <main>
-    <!-- LOGIN MODAL-->
-    <div class="modal fade" id="logIn" tabindex="-1" role="dialog" aria-labelledby="logInLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm ">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="logInLabel">Login</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body p-0">
-            <form class="p-3">
-              <div class="form-group">
-                <label for="userEmail">Email address</label>
-                <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
-              </div>
-
-              <div class="form-group">
-                <label for="userPassword">Password</label>
-                <input type="password" class="form-control" id="userPassword">
-                <small id="emailHelp" class="form-text text-muted mb-3"> <a class="passwordReset"
-                    href="passwordReset.html"> Forgot your password? </a></small>
-                <div class="form-group form-check m-1">
-                  <input type="checkbox" class="form-check-input" id="rememberMe">
-                  <label class="form-check-label" for="rememberMe">Remember me</label>
-                </div>
-              </div>
-              <button type="button" class="btn enter-btn drop-btn" id="button-login" data-toggle="modal"
-                data-target="#logIn">Enter</button>
-            </form>
-            <div class="modal-footer d-flex justify-content-center">
-              <p>Problems in login?</p>
-              <a href="#" role="button" class="btn btn-primary signUp-btn">Help me</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!--SEARCHMOVIES MODAL-->
-    <div class="modal fade" id="searchMovies" tabindex="-1" role="dialog" aria-labelledby="infoMoviesLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="infoMoviesLabel">Search result</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body p-0">
-            <div class="resultArea d-flex justify-content-center p-md-1 m-md-1">
-              <img class="poster p-3" id="poster" src="srcs/assets/ResiliaPoster.jpg">
-              <div class="memberSearch m-md-3 p-md-3">
-                <h3 class="mb-5" id="title"><b>TITLE</b></h3>
-                <p id="year">YEAR: </p>
-                <p id="director">DIRECTOR: </p>
-                <p id="runtime">RUNTIME: </p>
-                <p id="actors">STARS:</p>
-                <p id="release">RELEASE DATE: </p>
-                <p id="synopsis">SYNOPSIS: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis
-                  odio non nibh cursus pulvinar. Nulla sagittis, tellus nec mattis finibus, metus nisi facilisis nisi,
-                  in eleifend orci metus sit amet erat. Morbi vel metus vitae lorem dapibus feugiat. </p>
-              </div>
-            </div>
-            <div class="modal-footer d-flex justify-content-center">
-              <p>Not what you're looking for? Try our</p>
-              <button type="button" class="btn lets-btn" data-dismiss="modal">Advanced search</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="moviesSelect p-3 m-5">
       <!--MOST WATCHED MOVIES CAROUSEL-->
-      <div class="moviesSelect p-3 m-5">
-        <h3 class="movielist p-2 ml-1">Most <b>watched</b></h3>
+      <h3 class="movielist p-2 ml-1">Most <b>watched</b></h3>
 
-        <div id="mostCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+      <div id="mostCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
 
-          <!-- WRAPPER -->
-          <div class="carousel-inner">
+        <!-- WRAPPER -->
+        <div class="carousel-inner">
 
           <div class="carousel-item active">
             <div class="row">
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/avengersPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
-              <div class="col-md-2 ">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+              <div class="col-md-2">
+                <a href="#">
                   <img src="srcs/assets/frozenPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/justGoPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/piratesPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/titanicPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/avatarPoster.png" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
-              </div>
             </div>
+          </div>
 
 
           <div class="carousel-item">
             <div class="row">
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/beautyPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/lotrPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/fightPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/darkKnightPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/moanaPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/hpPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
             </div>
-            <!-- Carousel controls -->
-            <a class="carousel-control-prev control-size" href="#mostCarousel" data-slide="prev">
-              <p class="controller">•</p>
-            </a>
-            <a class="carousel-control-next control-size" href="#mostCarousel" data-slide="next">
-              <p class="controller">•</p>
-            </a>
+
           </div>
+          <!-- Carousel controls -->
+          <a class="carousel-control-prev control-size" href="#mostCarousel" data-slide="prev">
+            <p class="controller">•</p>
+          </a>
+          <a class="carousel-control-next control-size" href="#mostCarousel" data-slide="next">
+            <p class="controller">•</p>
+          </a>
         </div>
       </div>
+    </div>
 
+    <div class="moviesSelect p-3 m-5">
       <!--BEST RATED MOVIES CAROUSEL-->
-      <div class="moviesSelect p-3 m-5">
-        <h3 class="movielist  p-2 ml-1">Best <b>rated</b></h3>
+      <h3 class="movielist  p-2 ml-1">Best <b>rated</b></h3>
 
-        <div id="bestCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+      <div id="bestCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
 
-          <!-- WRAPPER -->
-          <div class="carousel-inner">
+        <!-- WRAPPER -->
+        <div class="carousel-inner">
 
           <div class="carousel-item active">
             <div class="row">
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/kingsmanPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/rocketmanPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/parasitePoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/rockyPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/splitPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
-            </div>
-
-
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-2">
-                  <a href="#">
-                    <img src="srcs/assets/jokerPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-                  </a>
-                </div>
-
-                <div class="col-md-2">
-                  <a href="#">
-                    <img src="srcs/assets/hamiltonPoster.png" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-                  </a>
-                </div>
-
-                <div class="col-md-2">
-                  <a href="#">
-                    <img src="srcs/assets/upPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-                  </a>
-                </div>
-
-                <div class="col-md-2">
-                  <a href="#">
-                    <img src="srcs/assets/prejudicePoster.jpg" class="d-inline-block img-sizing"
-                      alt="Avengers: Endgame">
-                  </a>
-                </div>
-
-                <div class="col-md-2">
-                  <a href="#">
-                    <img src="srcs/assets/seemePoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-                  </a>
-                </div>
-
-                <div class="col-md-2">
-                  <a href="#">
-                    <img src="srcs/assets/othersPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-                  </a>
-                </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/interstellarPoster.jpg" class="d-inline-block img-sizing"
                     alt="Avengers: Endgame">
                 </a>
               </div>
 
             </div>
-            <!-- Carousel controls -->
-            <a class="carousel-control-prev control-size" href="#bestCarousel" data-slide="prev">
-              <p class="controller">•</p>
-            </a>
-            <a class="carousel-control-next control-size" href="#bestCarousel" data-slide="next">
-              <p class="controller">•</p>
-            </a>
           </div>
-        </div>
-      </div>
-      
 
-      <!--DISCOVER MOVIES CAROUSEL-->
-      <div class="moviesSelect p-3 m-5">
-        <h3 class="movielist p-2 ml-1"> A <b>discover</b></h3>
 
           <div class="carousel-item">
             <div class="row">
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/jokerPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/hamiltonPoster.png" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/upPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/prejudicePoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/seemePoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
-            </div>
-
-
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-2">
-                  <a href="#">
-                    <img src="srcs/assets/upsidePoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-                  </a>
-                </div>
-
-                <div class="col-md-2">
-                  <a href="#">
-                    <img src="srcs/assets/austenlandPoster.jpg" class="d-inline-block img-sizing"
-                      alt="Avengers: Endgame">
-                  </a>
-                </div>
-
-                <div class="col-md-2">
-                  <a href="#">
-                    <img src="srcs/assets/monsterPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-                  </a>
-                </div>
-
-                <div class="col-md-2">
-                  <a href="#">
-                    <img src="srcs/assets/aSilentVoicePoster.jpg" class="d-inline-block img-sizing"
-                      alt="Avengers: Endgame">
-                  </a>
-                </div>
-
-                <div class="col-md-2">
-                  <a href="#">
-                    <img src="srcs/assets/trumanPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-                  </a>
-                </div>
-
-                <div class="col-md-2">
-                  <a href="#">
-                    <img src="srcs/assets/sociedadelitPoster.jpg" class="d-inline-block img-sizing"
-                      alt="Avengers: Endgame">
-                  </a>
-                </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/othersPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
             </div>
-            <!-- Carousel controls -->
-            <a class="carousel-control-prev control-size" href="#discoverCarousel" data-slide="prev">
-              <p class="controller">•</p>
-            </a>
-            <a class="carousel-control-next control-size" href="#discoverCarousel" data-slide="next">
-              <p class="controller">•</p>
-            </a>
-          </div>
-        </div>
-      </div>
 
-    </div>
-
-    <!--CAROUSEL MOBILE VERSION-->
-    <div id="mobileView">
-
-      <!--MOST WATCHED MOVIES CAROUSEL-->
-      <div class="moviesSelect p-3 m-5">
-        <h3 class="movielist p-2 ml-1">Most <b>watched</b></h3>
-        <div id="carouselMobileMost" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <a href="#">
-                <img src="srcs/assets/avengersPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/frozenPoster.jpg" class="d-inline-block img-sizing" alt="Frozen">
-              </a> </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/justGoPoster.jpg" class="d-inline-block img-sizing" alt="Just go with it">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/piratesPoster.jpg" class="d-inline-block img-sizing"
-                  alt="Pirates of Caribes: the curse of the black pearl">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/titanicPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/avatarPoster.png" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/beautyPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/lotrPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/fightPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/darkKnightPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/moanaPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/hpPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-          </div>
-          <a class="carousel-control-prev control-size" href="#carouselMobileMost" data-slide="prev">
-            <p class="controller">•</p>
-          </a>
-          <a class="carousel-control-next control-size" href="#carouselMobileMost" data-slide="next">
-            <p class="controller">•</p>
-          </a>
-        </div>
-      </div>
-
-
-      <!--BEST RATED MOVIES CAROUSEL-->
-      <div class="moviesSelect p-3 m-5">
-        <h3 class="movielist  p-2 ml-1">Best <b>rated</b></h3>
-        <div id="carouselMobileBest" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <a href="#">
-                <img src="srcs/assets/kingsmanPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/rocketmanPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a> </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/parasitePoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/rockyPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/splitPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/interstellarPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/jokerPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/hamiltonPoster.png" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/upPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/prejudicePoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/seemePoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#">
-                <img src="srcs/assets/othersPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
-              </a>
-            </div>
           </div>
           <!-- Carousel controls -->
-          <a class="carousel-control-prev control-size" href="#carouselMobileBest" data-slide="prev">
+          <a class="carousel-control-prev control-size" href="#bestCarousel" data-slide="prev">
             <p class="controller">•</p>
           </a>
-          <a class="carousel-control-next control-size" href="#carouselMobileBest" data-slide="next">
+          <a class="carousel-control-next control-size" href="#bestCarousel" data-slide="next">
             <p class="controller">•</p>
           </a>
         </div>
       </div>
-    
+    </div>
 
+    <div class="moviesSelect p-3 m-5">
       <!--DISCOVER MOVIES CAROUSEL-->
       <h3 class="movielist p-2 ml-1"> A <b>discover</b></h3>
 
@@ -657,37 +316,37 @@
           <div class="carousel-item active">
             <div class="row">
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/singlemanPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/wallstreetPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/pandorumPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/columbusPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/eyesPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/yourNamePoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
@@ -699,101 +358,67 @@
           <div class="carousel-item">
             <div class="row">
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/upsidePoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/austenlandPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/monsterPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
-                  <img src="srcs/assets/aSilentVoicePoster.jpg" class="d-inline-block img-sizing"
-                    alt="Avengers: Endgame">
+                <a href="#">
+                  <img src="srcs/assets/aSilentVoicePoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
+                <a href="#">
                   <img src="srcs/assets/trumanPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
 
               <div class="col-md-2">
-                <a href="#" data-toggle="modal" data-target="#infoMovies">
-                  <img src="srcs/assets/sociedadelitPoster.jpg" class="d-inline-block img-sizing"
-                    alt="Avengers: Endgame">
+                <a href="#">
+                  <img src="srcs/assets/sociedadelitPoster.jpg" class="d-inline-block img-sizing" alt="Avengers: Endgame">
                 </a>
               </div>
-            </div>
-            <!-- Carousel controls -->
-            <a class="carousel-control-prev control-size" href="#carouselMobileDiscover" data-slide="prev">
-              <p class="controller">•</p>
-            </a>
-            <a class="carousel-control-next control-size" href="#carouselMobileDiscover" data-slide="next">
-              <p class="controller">•</p>
-            </a>
-          </div>
-        </div>
 
-    </div>
-
-
-    <!--INFOMOVIES MODAL-->
-    <div class="modal fade" id="infoMovies" tabindex="-1" role="dialog" aria-labelledby="infoMoviesLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="infoMoviesLabel">Discover</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body p-0">
-            <div class="resultArea d-flex justify-content-center p-md-1 m-md-1">
-              <img class="poster p-3" id="poster" src="srcs/assets/ResiliaPoster.jpg">
-              <div class="memberSearch m-md-3 p-md-3">
-                <h3 class="mb-5" id="title"><b>TITLE</b></h3>
-                <p id="year">YEAR: </p>
-                <p id="director">DIRECTOR: </p>
-                <p id="runtime">RUNTIME: </p>
-                <p id="actors">STARS:</p>
-                <p id="release">RELEASE DATE: </p>
-                <p id="synopsis">SYNOPSIS: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis
-                  odio non nibh cursus pulvinar. Nulla sagittis, tellus nec mattis finibus, metus nisi facilisis nisi,
-                  in eleifend orci metus sit amet erat. Morbi vel metus vitae lorem dapibus feugiat. </p>
-              </div>
             </div>
 
           </div>
+          <!-- Carousel controls -->
+          <a class="carousel-control-prev control-size" href="#discoverCarousel" data-slide="prev">
+            <p class="controller">•</p>
+          </a>
+          <a class="carousel-control-next control-size" href="#discoverCarousel" data-slide="next">
+            <p class="controller">•</p>
+          </a>
         </div>
       </div>
     </div>
 
-
-      <!--START MEMBERSHIP-->
-      <div class="signature d-flex flex-column align-items-center justify-content-center p-3 mb-5">
-        <h3> Ready to watch? Enter your email to create or restart your membership.</h3>
-        <br><br>
-        <div class="input-group mb-3 w-50 min-vw-75">
-          <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username"
-            aria-describedby="button-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-outline lets-btn" type="submit" id="button-addon2">Let's go!</button>
-          </div>
+    <!--START MEMBERSHIP-->
+    <div class="signature d-flex flex-column align-items-center justify-content-center p-3 mb-5">
+      <h3> Ready to watch? Enter your email to create or restart your membership.</h3>
+      <br><br>
+      <div class="input-group mb-3 w-50 min-vw-75">
+        <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username"
+          aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline lets-btn" type="submit" id="button-addon2">Let's go!</button>
         </div>
       </div>
+    </div>
 
   </main>
 </body>
