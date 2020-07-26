@@ -22,6 +22,9 @@ main {
     background-color: #131313;
 
 }
+.errorMsg {
+    padding-bottom: 80px;
+}
 
 .memberContact {
     color: #ffc810;
