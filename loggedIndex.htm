@@ -45,13 +45,19 @@
 
           </ul>
  
-          <form class="form-inline my-2 my-lg-0 mr-3">
-            <input class="form-control mr-sm-2 mb-1" type="search" placeholder="Your favorite movie" aria-label="Search" id="movie-search">
-            <button class="btn btn-outline-dark mb-1 mr-2 search-btn" type="button" id="button-search" data-toggle="modal" data-target="#searchMovies">Search</button>
-                  <div class="dropdown">
-                    <button class="btn btn-dark sign-btn mb-1 mr-2 dropdown-toggle signIn-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="srcs/assets/user.png" width="25" height="25">
-                    </button>
+          <!--NAVBAR SEARCH-->
+          <section class="form-inline my-2 my-lg-0 mr-3">
+            <form id="form-search">
+              <input class="form-control mr-sm-2 mb-1" type="search" placeholder="Your favorite movie" aria-label="Search"
+                id="movie-search">
+              <button class="btn btn-outline-dark mb-1 mr-2 search-btn" type="submit" id="button-search"
+                data-toggle="modal" data-target="#searchMovies">Search</button>
+            </form>
+            <div class="dropdown">
+              <button class="btn btn-dark sign-btn mb-1 mr-2 dropdown-toggle signIn-btn" type="button"
+                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="srcs/assets/user.png" width="25" height="25">
+              </button>
 
                     <!--SIGN IN DROPDOWN MENU-->
                     <div class="dropdown-menu dropdown-menu-right p-2" aria-labelledby="dropdownMenuButton">
@@ -78,43 +84,33 @@
                       </div>
                     </div>
                   </div>
-          </form>
+          </section>
        </div>    
      </nav>
   </header>
 
     <main>     
        <!--SEARCHMOVIES MODAL-->
-      <div class="modal fade" id="searchMovies" tabindex="-1" role="dialog" aria-labelledby="infoMoviesLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="infoMoviesLabel">Search result</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>  
-            </div>
-            <div class="modal-body p-0">
-              <div class="resultArea d-flex justify-content-center p-md-1 m-md-1">
-                <img class="poster p-3" id="poster" src="srcs/assets/ResiliaPoster.jpg">
-                <div class="memberSearch m-md-3 p-md-3">
-                  <h3 class="mb-5" id="title"><b>TITLE</b></h3>
-                  <p id="year">YEAR: </p>
-                  <p id="director">DIRECTOR: </p>
-                  <p id="runtime">RUNTIME:  </p>
-                  <p id="actors">STARS:</p>
-                  <p id="release">RELEASE DATE: </p>
-                  <p id="synopsis">SYNOPSIS: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis odio non nibh cursus pulvinar. Nulla sagittis, tellus nec mattis finibus, metus nisi facilisis nisi, in eleifend orci metus sit amet erat. Morbi vel metus vitae lorem dapibus feugiat. </p>
-                </div>
-              </div>
-              <div class="modal-footer d-flex justify-content-center">
-                <p>Not what you're looking for? Try our</p>
-                <button type="button" class="btn lets-btn" data-dismiss="modal">Advanced search</button>
-               </div>
-            </div>
+       <div class="modal fade" id="searchMovies" tabindex="-1" role="dialog" aria-labelledby="infoMoviesLabel"
+       aria-hidden="true">
+       <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="infoMoviesLabel">Search result</h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
            </div>
-          </div>
-      </div>
+           <div class="modal-body p-0" id="modal-body"></div>
+ 
+           <div class="modal-footer d-flex justify-content-center">
+             <p>Not what you're looking for? Try our</p>
+             <button type="button" class="btn lets-btn" data-dismiss="modal"
+               onclick="window.location.href='movieSearch.html'">Advanced search</button>
+           </div>
+         </div>
+       </div>
+     </div>
 
      <!--USER GREETINGS--> 
       <div class="d-flex justify-content-center flex-column p-3 m-5 userArea">
@@ -209,5 +205,16 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="srcs/javascript/loginNavbar.js"></script>
+<script src="srcs/javascript/modalSearch.js"></script>
+<script src="srcs/javascript/carouselMovie.js"></script>
+
+<script src="srcs/javascript/controllers/ModalSearchController.js"></script>
+<script src="srcs/javascript/controllers/CarouselModalController.js"></script>
+<script src="srcs/javascript/models/ModalSearchModel.js"></script>
+<script src="srcs/javascript/views/ModalSearchView.js"></script>
+<script src="srcs/javascript/views/ModalSearchError.js"></script>
+
 
 </html>
