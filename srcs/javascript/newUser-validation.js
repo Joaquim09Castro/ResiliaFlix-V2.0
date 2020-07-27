@@ -12,29 +12,27 @@ let idNumberStr = "";
 let emailStr = "";
 
 idNumber.addEventListener("focusout", (event) => {
-  idNumberStr = idNumber.value;
-  const checkIdRegExp = new RegExp();
-  checkIdRegExp = /^(\d{1,2})(\d{3})(\d{3})([\dX])/;
-  if (!idNumberStr.match(checkIdRegExp)) {
-    messageIdNumber.textContent = "Please enter a valid RG";
-    idNumber.focus();
-  } else {
-    messageIdNumber.textContent = "";
-  }
+	idNumberStr = idNumber.value;
+	let checkIdRegExp = new RegExp();
+	checkIdRegExp = /^(\d{1,2})(\d{3})(\d{3})([\dX])/;
+	if (!idNumberStr.match(checkIdRegExp)) {
+		messageIdNumber.textContent = "Please enter a valid RG";
+	} else {
+		messageIdNumber.textContent = "";
+	}
 	event.preventDefault();
 	event.stopPropagation();
 });
 
 email.addEventListener("focusout", (event) => {
-  emailStr = email.value;
-  const checkEmailRegExp = new RegExp();
-  checkEmailRegExp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-  if (!emailStr.match(checkEmailRegExp)) {
-    messageEmail.textContent = "Please enter a valid mail acount";
-    email.focus();
-  } else {
-    messageEmail.textContent = "";
-  }
+	emailStr = email.value;
+	let checkEmailRegExp = new RegExp();
+	checkEmailRegExp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+	if (!emailStr.match(checkEmailRegExp)) {
+		messageEmail.textContent = "Please enter a valid mail acount";
+	} else {
+		messageEmail.textContent = "";
+	}
 	event.preventDefault();
 	event.stopPropagation();
 });
@@ -45,7 +43,6 @@ passWord.addEventListener("focusout", (event) => {
 		messageDisplay.classList.add("alert-color");
 		messageDisplay.textContent =
 			"Your password must be at least 8 characters long";
-		passWord.focus();
 	} else {
 		messageDisplay.classList.remove("alert-color");
 		messageDisplay.textContent = "Valid Password";
@@ -64,7 +61,6 @@ validPassWord.addEventListener("focusout", (event) => {
 	if (passWordStr.localeCompare(validPassWordStr) != 0) {
 		messagePasswordCheck.classList.add("alert-color");
 		messagePasswordCheck.textContent = "Passwords must be identical";
-		passWord.focus();
 	} else {
 		messagePasswordCheck.classList.remove("alert-color");
 		messagePasswordCheck.textContent = " Password checked ";
