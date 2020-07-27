@@ -12,31 +12,29 @@ let idNumberStr = "";
 let emailStr = "";
 
 idNumber.addEventListener("focusout", (event) => {
-	idNumberStr = idNumber.value;
-	let checkIdRegExp = new RegExp();
-	checkIdRegExp = /^(\d{1,2})(\d{3})(\d{3})([\dX])/;
-	if (!idNumberStr.match(checkIdRegExp)) {
-		messageIdNumber.textContent = "Please enter a valid RG";
-		idNumber.focus();
-	} else {
-		messageIdNumber.textContent = "";
-	}
-
+  idNumberStr = idNumber.value;
+  const checkIdRegExp = new RegExp();
+  checkIdRegExp = /^(\d{1,2})(\d{3})(\d{3})([\dX])/;
+  if (!idNumberStr.match(checkIdRegExp)) {
+    messageIdNumber.textContent = "Please enter a valid RG";
+    idNumber.focus();
+  } else {
+    messageIdNumber.textContent = "";
+  }
 	event.preventDefault();
 	event.stopPropagation();
 });
 
 email.addEventListener("focusout", (event) => {
-	emailStr = email.value;
-	let checkEmailRegExp = new RegExp();
-	checkEmailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-	if (!emailStr.match(checkEmailRegExp)) {
-		messageEmail.textContent = "Please enter a valid email account";
-		email.focus();
-	} else {
-		messageEmail.textContent = "";
-	}
-
+  emailStr = email.value;
+  const checkEmailRegExp = new RegExp();
+  checkEmailRegExp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  if (!emailStr.match(checkEmailRegExp)) {
+    messageEmail.textContent = "Please enter a valid mail acount";
+    email.focus();
+  } else {
+    messageEmail.textContent = "";
+  }
 	event.preventDefault();
 	event.stopPropagation();
 });
