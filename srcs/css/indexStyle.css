@@ -250,6 +250,10 @@ footer {
         
     }
 
+    .navSearch {
+		width: 100%;
+	}
+
     .drop-btn {
         width: 100%;
     }

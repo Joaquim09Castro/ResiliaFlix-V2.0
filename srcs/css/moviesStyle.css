@@ -197,6 +197,10 @@ footer {
 		right: auto;
 	}
 
+	.navSearch {
+		width: 100%;
+	}
+
 	.enter-btn {
 		width: 100%;
 	}
