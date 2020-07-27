@@ -10,7 +10,7 @@ class SearchView { // View Provisória
         <a data-toggle="modal" data-target="#infoMovies" class="movie-card">
           <img src="${model.poster}" class="card-img" alt="${model.poster} poster" id="3">
           <div class="card-img-overlay movieTitle" id="${model.id}">
-            <p class="" id="${model.id}">${model.title}</p>
+            <p class="movieName" id="${model.id}">${model.title}</p>
           </div>
         </a>
       </div>

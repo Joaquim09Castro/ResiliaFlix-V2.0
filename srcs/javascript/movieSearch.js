@@ -20,7 +20,7 @@ const search = () => {
     SearchController.searchMovie(searchInfo.searchInput.value);
     searchInfo.searchInput.value = "";
   } else {
-    alert("Enter a movie name");
+    alert("Enter a movie title to search");
   }
 };
 
