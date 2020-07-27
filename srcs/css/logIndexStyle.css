@@ -1,193 +1,181 @@
 body {
-    background-color: black;
-    
+	background-color: black;
 }
 
 .navbar {
-    background-color: #ffc810;
+	background-color: #ffc810;
 }
 
 .nav-text {
-    font-family: 'Grand Hotel', cursive;
-    font-size: 30px;
+	font-family: "Grand Hotel", cursive;
+	font-size: 30px;
 }
 
 .sign-btn {
-    background-color: black;
-    border-color: none;
-    
+	background-color: black;
+	border-color: none;
 }
 
 .sign-btn:hover {
-    background-color: #ffc810;
-    border-color: #131313;
-    
+	background-color: #ffc810;
+	border-color: #131313;
 }
 
 .passwordReset {
-    text-decoration: underline;
-    color: black;
+	text-decoration: underline;
+	color: black;
 }
 
 .enter-btn {
-    color: black;
-    border-color: #ffc810;
-    background-color: #ffc810;
-    width: 100%;
+	color: black;
+	border-color: #ffc810;
+	background-color: #ffc810;
+	width: 100%;
 }
 
 .signUp-btn {
-    color: #ffc810;
-    border-color: black;
-    background-color: black;
-    width: 100%;
-    
+	color: #ffc810;
+	border-color: black;
+	background-color: black;
+	width: 100%;
 }
 
 .signUp-btn a {
-    text-decoration: none;
-    color: #ffc810;
-
+	text-decoration: none;
+	color: #ffc810;
 }
 
 .signUp-btn:hover {
-    background-color: #ffc810;
-    color: black;
-    width: 100%;
-    
+	background-color: #ffc810;
+	color: black;
+	width: 100%;
 }
 
 .signUp-btn a:hover {
-    text-decoration: none;
-    color: black;
-
+	text-decoration: none;
+	color: black;
 }
 
 .img-sizing {
-    object-fit: cover;
-    height: 600px;
-   
+	object-fit: cover;
+	height: 600px;
 }
 
 .img-position {
-    object-position: 0 -15%;
+	object-position: 0 -15%;
 }
 
 .memberSearch {
-    color: #131313;
-    max-width: 45%;
+	color: #131313;
+	max-width: 45%;
+}
 
+.modal-header {
+	background-color: #ffc810;
+	color: black;
+}
+
+.modal-footer {
+	background-color: #131313;
+	color: #ffc810;
 }
 
 .poster {
-    display: block;
-    margin: 5px auto;
-    min-width: 50%;
-    max-width: 100%;
-
+	display: block;
+	margin: 5px auto;
+	min-width: 50%;
+	max-width: 100%;
 }
 
 .userArea {
-    color: #ffc810;
-    background-color: #131313;
+	color: #ffc810;
+	background-color: #131313;
 }
 
 .moviesSelect {
-    color: #ffc810;
-    min-width: 600px;
-    background-color: #131313;
-
+	color: #ffc810;
+	min-width: 600px;
+	background-color: #131313;
 }
 
 .movielist {
-    color: #ffc810;
+	color: #ffc810;
 }
 
 .movieTitle {
-    opacity: 0%;
+	opacity: 0%;
 }
 
 .movieTitle:hover {
-    opacity: 100%;
-    
-    
+	opacity: 100%;
 }
 
 .lets-btn {
-    color: black;
-    background-color: #ffc810;
-    border: none;
-    
+	color: black;
+	background-color: #ffc810;
+	border: none;
 }
 
 .lets-btn:hover {
-    color: #ffc810;
-    background-color: black;
-    border-color: #ffc810;
+	color: #ffc810;
+	background-color: black;
+	border-color: #ffc810;
 }
-
 
 .drop-btn {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 155px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	width: 155px;
 }
-
 
 footer {
-    position: absolute;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
-    padding-top: 10px;
-    background-color: #ffc810;
-    color: black;
-    margin-bottom: 0px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-@media (max-width: 850px) {
-
-    .sign-btn {
-        width: 100%;
-    }
-
-    .search-btn {
-        width: 100%;
-    }
-
-
-    .userArea {
-        flex-flow: column;
-
-    }
-
-    .memberSearch {
-        max-width: 100%;
-        padding: 25px;
-    }
-
-    .modal-dialog {
-        max-width: 92%;
-    }
-
-    .dropdown {
-        width: 98% !important;
-    }
-
-    .dropdown-menu-right {
-        left: 0;
-        right: auto;
-        
-    }
-
-    .drop-btn {
-        width: 100%;
-    }
-
+	position: absolute;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+	padding: 5px;
+	padding-top: 10px;
+	background-color: #ffc810;
+	color: black;
+	margin-bottom: 0px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
+@media (max-width: 850px) {
+	.sign-btn {
+		width: 100%;
+	}
+
+	.search-btn {
+		width: 100%;
+	}
+
+	.userArea {
+		flex-flow: column;
+	}
+
+	.memberSearch {
+		max-width: 100%;
+		padding: 25px;
+	}
+
+	.modal-dialog {
+		max-width: 92%;
+	}
+
+	.dropdown {
+		width: 98% !important;
+	}
+
+	.dropdown-menu-right {
+		left: 0;
+		right: auto;
+	}
+
+	.drop-btn {
+		width: 100%;
+	}
+}
