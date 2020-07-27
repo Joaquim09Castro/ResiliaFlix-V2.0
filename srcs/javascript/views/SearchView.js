@@ -5,10 +5,14 @@ class SearchView { // View Provisória
 
   template(model) {
     return `
-    <div class="card bg-dark text-white">
-      <img src="${model.poster}" class="card-img" alt="${model.title} Poster">
-      <div class="card-img-overlay movieTitle">
-        <p>${model.title}</p>
+    <div class="col mb-4" id="1">
+      <div class="card bg-dark text-white resultCard" id="2">
+        <a data-toggle="modal" data-target="#infoMovies" class="movie-card">
+          <img src="${model.poster}" class="card-img" alt="${model.poster} poster" id="3">
+          <div class="card-img-overlay movieTitle" id="${model.id}">
+            <p class="" id="${model.id}">${model.title}</p>
+          </div>
+        </a>
       </div>
     </div>
     `;

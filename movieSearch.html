@@ -28,7 +28,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item ">
           <a class="nav-link" href="index.htm">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
@@ -38,7 +38,6 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="movies.html">Movies</a>
-            <a class="dropdown-item" href="series.html">Series</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="news.html">What's next?</a>
           </div>
@@ -122,31 +121,24 @@
           <p class="pb-5">Here you can search through our full catalog, don't be shy.</p>
         </spam>
         <form class="input-group" id="search-form">
-          <input type="text" class="form-control" aria-label="Text input with dropdown button" id="search-input">
+          <input type="text" class="form-control" aria-label="Text input with button" id="search-input">
           <div class="input-group-append">
-            <button class="btn lets-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false" id="search-btn">Search</button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Movies</a>
-              <a class="dropdown-item" href="#">Series</a>
-              <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Show me everything</a>
-            </div>
+            <button class="btn lets-btn" type="button" aria-expanded="false" id="search-btn">Search</button>
           </div>
         </form>
       </div>
     </div>
+
     <br><br>
 
-    <div class="p-5 ml-5 mr-5">
-      <div class="card-deck" id="search-results-container">
+    <!--RESULT AREA-->
 
-      </div>
-    </div>
-
-
+    <div class="row row-cols-1 row-cols-md-4 resultArea p-5 ml-5 mr-5" id="search-results-container">
 
     </div>
+
+
+
     <br>
     <!--INFOMOVIES MODAL-->
     <div class="modal fade" id="infoMovies" tabindex="-1" role="dialog" aria-labelledby="infoMoviesLabel"
@@ -159,29 +151,13 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body p-0">
-            <div class="resultArea d-flex justify-content-center p-md-1 m-md-1">
-              <img class="poster p-3" id="poster" src="srcs/assets/ResiliaPoster.jpg">
-              <div class="memberSearch m-md-3 p-md-3">
-                <h3 class="mb-5" id="title"><b>TITLE</b></h3>
-                <p id="year">YEAR: </p>
-                <p id="director">DIRECTOR: </p>
-                <p id="runtime">RUNTIME: </p>
-                <p id="actors">STARS:</p>
-                <p id="release">RELEASE DATE: </p>
-                <p id="synopsis">SYNOPSIS: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis
-                  odio non nibh cursus pulvinar. Nulla sagittis, tellus nec mattis finibus, metus nisi facilisis nisi,
-                  in eleifend orci metus sit amet erat. Morbi vel metus vitae lorem dapibus feugiat. </p>
-              </div>
-            </div>
+          
+          <div class="modal-body p-0" id="modal-body">
 
           </div>
+
         </div>
       </div>
-    </div>
-
-    <br><br>
-
     </div>
 
 
@@ -216,5 +192,13 @@
 <script src="srcs/javascript/controllers/SearchController.js"></script>
 <script src="srcs/javascript/models/SearchModel.js"></script>
 <script src="srcs/javascript/views/SearchView.js"></script>
+
+<!--scripts modal-->
+<script src="srcs/javascript/modalSearch.js"></script>
+
+<script src="srcs/javascript/controllers/SearchPageController.js"></script>
+<script src="srcs/javascript/models/ModalSearchModel.js"></script>
+<script src="srcs/javascript/views/ModalSearchView.js"></script>
+<script src="srcs/javascript/views/ModalSearchError.js"></script>
 
 </html>
