@@ -119,6 +119,13 @@ body {
 	align-items: center;
 }
 
+.lets-btn {
+    color: black;
+    background-color: #ffc810;
+    border: none;
+    
+}
+
 .lets-btn:hover {
 	color: #ffc810;
 	background-color: black;
@@ -193,4 +200,11 @@ footer {
 	.enter-btn {
 		width: 100%;
 	}
+
+	.modalContent {
+		flex-flow: column;
+	}
 }
+
+
+

@@ -68,3 +68,13 @@ footer {
 	width: 100%;
 	box-sizing: border-box;
 }
+
+@media (max-width: 850px) {
+
+	.send-btn{
+		width: 100%;
+	}
+
+	.memberContact{
+		padding: 30px;
+	}

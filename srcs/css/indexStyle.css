@@ -218,6 +218,10 @@ footer {
         width: 100%;
     }
 
+    .img-position {
+        object-position: 60% -15%;
+    }
+
     .fQcard {
         min-width: auto;
     }

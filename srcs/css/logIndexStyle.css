@@ -147,6 +147,7 @@ footer {
 @media (max-width: 850px) {
 	.sign-btn {
 		width: 100%;
+		
 	}
 
 	.search-btn {
@@ -166,6 +167,10 @@ footer {
 		max-width: 92%;
 	}
 
+	.moviesSelect{
+		min-width: auto;
+	}
+
 	.dropdown {
 		width: 98% !important;
 	}
@@ -173,6 +178,10 @@ footer {
 	.dropdown-menu-right {
 		left: 0;
 		right: auto;
+	}
+
+	.navSearch {
+		width: 100%;
 	}
 
 	.drop-btn {

@@ -201,4 +201,8 @@ footer {
     .drop-btn {
         width: 100%;
     }
+
+    .modalContent {
+		flex-flow: column;
+	}
 }

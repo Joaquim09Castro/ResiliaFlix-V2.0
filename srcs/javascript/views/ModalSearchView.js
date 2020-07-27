@@ -5,9 +5,9 @@ class ModalSearchView {
 
   template(model) {
     return `
-        <div class="d-flex justify-content-center p-md-1 m-md-1">
+        <div class="d-flex justify-content-center p-md-1 m-md-1 modalContent">
             <img class="poster p-3" id="poster" src="${model.poster}">
-            <div class=" m-md-3 p-md-3">
+            <div class=" m-3 p-3">
               <h3 class="mb-5" id="title"><b>${model.title}</b></h3>
               <p id="year"><b>YEAR</b>: ${model.year}</p>
               <p id="director"><b>DIRECTOR</b>: ${model.director}</p>
