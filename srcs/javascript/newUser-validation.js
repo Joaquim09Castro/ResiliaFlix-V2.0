@@ -13,7 +13,7 @@ let emailStr = "";
 
 idNumber.addEventListener("focusout", (event) => {
   idNumberStr = idNumber.value;
-  let checkIdRegExp = new RegExp();
+  const checkIdRegExp = new RegExp();
   checkIdRegExp = /^(\d{1,2})(\d{3})(\d{3})([\dX])/;
   if (!idNumberStr.match(checkIdRegExp)) {
     messageIdNumber.textContent = "Please enter a valid RG";
@@ -28,7 +28,7 @@ idNumber.addEventListener("focusout", (event) => {
 
 email.addEventListener("focusout", (event) => {
   emailStr = email.value;
-  let checkEmailRegExp = new RegExp();
+  const checkEmailRegExp = new RegExp();
   checkEmailRegExp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   if (!emailStr.match(checkEmailRegExp)) {
     messageEmail.textContent = "Please enter a valid mail acount";
