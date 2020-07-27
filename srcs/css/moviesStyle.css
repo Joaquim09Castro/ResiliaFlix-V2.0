@@ -120,7 +120,7 @@ body {
 .poster {
     display: block;
     margin: 5px auto;
-    min-width: 15%;
+    min-width: 50%;
     max-width: 100%;
 
 }
