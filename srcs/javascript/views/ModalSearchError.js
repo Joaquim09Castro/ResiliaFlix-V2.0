@@ -5,8 +5,8 @@ class ModalSearchError {
 
   template() {
     return `
-    <div class="resultArea d-flex justify-content-center p-md-1 m-md-1">
-    <img class="poster p-3" id="poster" src="srcs/assets/Popcorn.png">
+    <div class="d-flex justify-content-center p-md-1 m-md-1">
+    <img class="poster p-3" id="poster" src="srcs/assets/ResiliaPoster.jpg">
     <div class="memberSearch m-md-3 p-md-3">
       <h3 class="mb-5 text-center" id="title"><b>Movie Not Found</b></h3>
   </div>

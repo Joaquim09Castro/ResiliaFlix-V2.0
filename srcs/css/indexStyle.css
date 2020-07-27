@@ -91,12 +91,10 @@ body {
     color: #ffc810;
 }
 
-
-
 .memberSearch {
     color: #131313;
-    max-width: 45%;
-
+    max-width: 55%;
+    min-width: 55%;
 }
 
 .poster {
@@ -106,7 +104,6 @@ body {
     max-width: 100%;
 
 }
-
 
 .signature {
     color: #ffc810;
@@ -145,15 +142,14 @@ body {
 
 }
 
-
 .fQuestions {
     
     color: #ffc810;
     flex-flow: column;
     text-align: center;
-    
-    
+        
 }
+
 .card-header {
     background-color: #131313;
 
@@ -182,7 +178,6 @@ body {
     font-size: 22px;
     background-color: #131313;
 
-
 }
 
 .fQtext:hover {
@@ -191,13 +186,13 @@ body {
     font-weight: bold
 
 }
+
 .drop-btn {
     display: flex;
     flex-flow: column;
     align-items: center;
     width: 155px;
 }
-
 
 footer {
     position: absolute;

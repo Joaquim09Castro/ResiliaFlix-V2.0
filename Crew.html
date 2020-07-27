@@ -46,8 +46,6 @@
         </ul>
 
         <form class="form-inline my-2 my-lg-0 mr-3">
-          <input class="form-control mr-sm-2 mb-1" type="search" placeholder="Your favorite movie" aria-label="Search" id="movie-search">
-          <button class="btn btn-outline-dark mb-1 mr-2 search-btn" type="button" id="button-search" data-toggle="modal" data-target="#searchMovies">Search</button>
                 <div class="dropdown">
                   <button class="btn btn-dark sign-btn mb-1 mr-2 dropdown-toggle signIn-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <img src="srcs/assets/user.png" width="25" height="25">
@@ -101,45 +99,13 @@
             </form>
             <div class="modal-footer d-flex justify-content-center">
               <p>Problems in login?</p>
-              <a href="#" role="button" class="btn btn-primary lets-btn">Help me</a></button>
+              <a href="passwordReset.html" role="button" class="btn btn-primary lets-btn">Help me</a></button>
              </div>
           </div>
         </div>
       </div>
     </div>
 
-
-    <!--SEARCHMOVIES MODAL-->
-    <div class="modal fade" id="searchMovies" tabindex="-1" role="dialog" aria-labelledby="infoMoviesLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="infoMoviesLabel">Search result</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>  
-          </div>
-          <div class="modal-body p-0">
-            <div class="resultArea d-flex justify-content-center p-md-1 m-md-1">
-              <img class="poster p-3" id="poster" src="srcs/assets/ResiliaPoster.jpg">
-              <div class="memberSearch m-md-3 p-md-3">
-                <h3 class="mb-5" id="title"><b>TITLE</b></h3>
-                <p id="year">YEAR: </p>
-                <p id="director">DIRECTOR: </p>
-                <p id="runtime">RUNTIME:  </p>
-                <p id="actors">STARS:</p>
-                <p id="release">RELEASE DATE: </p>
-                <p id="synopsis">SYNOPSIS: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis odio non nibh cursus pulvinar. Nulla sagittis, tellus nec mattis finibus, metus nisi facilisis nisi, in eleifend orci metus sit amet erat. Morbi vel metus vitae lorem dapibus feugiat. </p>
-              </div>
-            </div>
-            <div class="modal-footer d-flex justify-content-center">
-              <p>Not what you're looking for? Try our</p>
-              <button type="button" class="btn lets-btn" data-dismiss="modal">Advanced search</button>
-             </div>
-          </div>
-         </div>
-        </div>
-    </div>
 
       <!--CREW PROFILE-->
       <div class="Crew container justify-content-center">
@@ -224,17 +190,17 @@
         <form>
           <div class="form-group">
             <label for="nameContact">Name</label>
-            <input type="email" class="form-control" id="nameContact" placeholder="Your name here">
+            <input type="email" class="form-control" id="nameContact" placeholder="Your name here" required>
           </div>
 
           <div class="form-group">
             <label for="emailContact">Email address</label>
-            <input type="email" class="form-control" id="emailContact" placeholder="Your email here">
+            <input type="email" class="form-control" id="emailContact" placeholder="Your email here" required>
           </div>
 
           <div class="form-group">
             <label for="messageContact">Message</label>
-            <textarea class="form-control" id="messageContact" rows="5" placeholder="Your msg here... Be nice :)"></textarea>
+            <textarea class="form-control" id="messageContact" rows="5" placeholder="Your msg here... Be nice :)" required></textarea>
           </div>
           <button type="submit" class="btn send-btn">Send</button>
         </form>

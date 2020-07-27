@@ -179,6 +179,13 @@ footer {
 
 
 @media (max-width: 850px) {
+    #mobileView {
+        display: inline !important;
+    }
+    
+    #desktopView {
+        display: none !important;
+    }
 
     .sign-btn {
         width: 100%;

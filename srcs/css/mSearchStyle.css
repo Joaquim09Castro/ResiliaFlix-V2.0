@@ -72,6 +72,17 @@ main {
 
 }
 
+.modal-header {
+    background-color: #ffc810;
+    color: black;
+
+}
+
+.modal-footer {
+    background-color: #131313;
+    color: #ffc810;
+}
+
 .searchArea {
     color: #ffc810;
     background-color: #131313;
@@ -92,6 +103,12 @@ main {
     max-width: 100%;
 
 }
+
+
+.resultArea{
+    min-height: 250px;
+}
+
 
 .lets-btn {
     color: black;
@@ -129,9 +146,9 @@ main {
 }
 
 .movieTitle:hover {
-    opacity: 100%;
-    
-    
+    opacity: 50%;
+    background-color: #131313;
+
 }
 
 footer {
