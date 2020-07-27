@@ -6,17 +6,17 @@
     <link rel="shortcut icon" type="image/x-icon" href="srcs/assets/logo2.PNG">
     <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="srcs/css/404Style.css">
-    <title>404 - ResíliaFlix</title>
+    <link rel="stylesheet" href="srcs/css/loginStyle.css">
+    <title>Login - ResíliaFlix</title>
 </head>
 
 <body>
   <header>
-    <!--NAVBAR-->
-     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+      <!--NAVBAR-->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light">
         <a class="navbar-brand nav-text" href="index.htm">
           <img src="srcs/assets/logo2.PNG" width="35" height="35" class="d-inline-block align-center" alt="ResiliaFlix" loading="lazy">
-          ResíliaFlix
+          Resíliaflix
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
+            <li class="nav-item active">
               <a class="nav-link" href="index.htm">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
@@ -34,6 +34,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="movies.html">Movies</a>
+                <a class="dropdown-item" href="series.html">Series</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="news.html">What's next?</a>
               </div>
@@ -44,21 +45,44 @@
             </li>
 
           </ul>
-    
+ 
+        
      </nav>
   </header>
 
     <main>     
-      <!-- ERROR MSG-->
-      <div class=" d-flex justify-content-center align-items-center flex-column errorMsg">
-        <div class="memberContact  p-5 d-flex flex-column align-items-center">
-          <h3>Ops! We couldn't find what you're looking for.</h3>
+      
+      <!-- LOGIN-->
+      <div class=" d-flex justify-content-center align-items-center flex-column pt-0">
+        <div class="memberContact pb-5 d-flex flex-column align-items-center">
+          <h3>Welcome! :)</h3>
           <br>
-          <p>Try refresh the page or go make some popcorn while we fix things up!</p>
-          <img src="srcs/assets/Popcorn.png" width="250">
-          <div>
-            
-            <a type="button" href="index.htm" class="btn send-btn">Refresh</a>
+          <p>Enter your email and password to login:</p>
+          
+          <form class="p-3">
+            <div class="form-group">
+              <label for="userEmail">Email address</label>
+              <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+            </div>
+
+            <div class="form-group">
+              <label for="userPassword">Password</label>
+              <input type="password" class="form-control" id="userPassword">
+              <small id="emailHelp" class="form-text text-muted mb-3"> <a class="passwordReset" href="passwordReset.html"> Forgot your password? </a></small>
+              <div class="form-group form-check m-1">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+              </div>  
+            </div>
+            <a href="#" role="button" class="btn btn-primary send-btn">Enter</a></button>
+          </form>
+          <div class="modal-footer d-flex justify-content-center">
+            <p>Problems in login?</p>
+            <a href="#" role="button" class="btn btn-primary send-btn">Help me</a></button>
+          </div>
+        
+
+          <div></div>
 
             
           </div>
