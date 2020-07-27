@@ -19,7 +19,7 @@ class SearchController {
         console.log(movie);
         resultDisplayer.update(search);
       });
-
+      searchInfo.cardList = document.querySelectorAll(".movie-card");
     };
 
     xhr.send();
