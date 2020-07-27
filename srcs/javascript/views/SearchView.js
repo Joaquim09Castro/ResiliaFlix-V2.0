@@ -14,6 +14,7 @@ class SearchView { // View Provisória
           </div>
         </a>
       </div>
+      </a>
     </div>
     `;
   }

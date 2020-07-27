@@ -33,7 +33,7 @@ body {
     color: black;
     border-color: #ffc810;
     background-color: #ffc810;
-    width: 155px;
+    width: 100%;
 }
 
 .enter-btn:hover {

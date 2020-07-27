@@ -15,42 +15,34 @@ main {
 	font-size: 30px;
 }
 
-.memberSignUp {
+.msgArea {
 	color: #ffc810;
 	min-width: 600px;
 	background-color: #131313;
 }
 
-.logo {
-	width: 150px;
+.memberContact {
+	color: #ffc810;
 }
 
 .send-btn {
 	color: black;
 	border-color: #ffc810;
 	background-color: #ffc810;
-	width: 100%;
-	margin-top: 32px;
+	width: 380px;
 }
 
-.lets-btn {
-	color: black;
-	background-color: #ffc810;
-	border: none;
-}
-
-.lets-btn:hover {
+.send-btn:hover {
+	background-color: #131313;
 	color: #ffc810;
-	background-color: black;
 	border-color: #ffc810;
 }
 
-.terms {
-	text-decoration: none;
+.passwordReset {
 	color: #ffc810;
 }
 
-.terms:hover {
+.passwordReset:hover {
 	color: #ffc810;
 }
 
@@ -75,14 +67,4 @@ footer {
 	margin-bottom: 0px;
 	width: 100%;
 	box-sizing: border-box;
-}
-
-@media (max-width: 850px) {
-	.memberSignUp {
-		min-width: auto;
-	}
-
-	.headForm {
-		flex-flow: column;
-	}
 }

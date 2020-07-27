@@ -66,25 +66,13 @@
             <div class="dropdown-menu dropdown-menu-right p-3" aria-labelledby="dropdownMenuButton">
               <h3>Hello! :) </h3>
               <form>
-                <button type="button" class="btn enter-btn drop-btn" id="button-login" data-toggle="modal"
+                <button type="button" class="btn enter-btn drop-btn" data-toggle="modal"
                   data-target="#logIn">Enter</button>
                 <div class="dropdown-divider"></div>
                 Not a member yet?
                 <a href="newUser.html" role="button" class="btn btn-primary signUp-btn">Sign up now</a></button>
-
-                <div class="form-group">
-                  <label for="userPassword">Password</label>
-                  <input type="password" class="form-control" id="userPassword">
-                  <small id="emailHelp" class="form-text text-muted mb-3"> <a class="passwordReset"
-                      href="passwordReset.html"> Forgot your password? </a></small>
-                  <div class="form-group form-check m-1">
-                    <input type="checkbox" class="form-check-input" id="rememberMe">
-                    <label class="form-check-label" for="rememberMe">Remember me</label>
-                  </div>
-                </div>
-                <a href="#" role="button" class="btn btn-primary enter-btn">Enter</a></button>
-              </form>
-            </div>
+              </form>    
+            </div>  
           </div>
         </section>
       </div>
@@ -105,13 +93,13 @@
           <div class="modal-body p-0">
             <form class="p-3">
               <div class="form-group">
-                <label for="userEmail">Email address</label>
-                <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+                <label for="user-email">Email address</label>
+                <input type="email" class="form-control" id="user-email" aria-describedby="emailHelp">
               </div>
 
               <div class="form-group">
-                <label for="userPassword">Password</label>
-                <input type="password" class="form-control" id="userPassword">
+                <label for="user-password">Password</label>
+                <input type="password" class="form-control" id="user-password">
                 <small id="emailHelp" class="form-text text-muted mb-3"> <a class="passwordReset"
                     href="passwordReset.html"> Forgot your password? </a></small>
                 <div class="form-group form-check m-1">
@@ -119,10 +107,11 @@
                   <label class="form-check-label" for="rememberMe">Remember me</label>
                 </div>
               </div>
+              <button type="submit" class="btn enter-btn" id="button-login" data-target="#logIn">Enter</button>
             </form>
             <div class="modal-footer d-flex justify-content-center">
               <p>Problems in login?</p>
-              <a href="#" role="button" class="btn btn-primary lets-btn">Help me</a></button>
+              <a href="#" role="button" type="submit" class="btn btn-primary lets-btn">Help me</a></button>
             </div>
           </div>
         </div>

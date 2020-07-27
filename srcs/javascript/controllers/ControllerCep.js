@@ -9,7 +9,7 @@ class ControllerCep {
 
     requestZip.addEventListener("load", () => {
       if (requestZip.status != 200) {
-        throw new Error("Request not found");
+        ViewCep.displayErrorStatus();
       }
       const requestZipObj = JSON.parse(requestZip.responseText);
 
@@ -20,8 +20,11 @@ class ControllerCep {
         requestZipObj.uf,
         requestZipObj.bairro
       );
-      console.log(completeAdress);
-      ViewCep.displayAdress(completeAdress.returnZip());
+      
+      if (requestZipObj.logradouro == undefined) {
+        zipCodeCheck.innerHTML = ViewCep.displayError(requestZipObj);
+        ViewCep.displayAdress(requestZipObj);
+      } else ViewCep.displayAdress(completeAdress.returnZip());
     });
 
     requestZip.send();
