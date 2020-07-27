@@ -1,218 +1,196 @@
 body {
-    background-color: black;
-    margin-top: 100px;
+	background-color: black;
+	margin-top: 100px;
 }
 
 #mobileView {
-    display: none !important;
+	display: none !important;
 }
 
 #desktopView {
-    display: inline !important;
+	display: inline !important;
 }
 
 .navbar {
-    background-color: #ffc810;
+	background-color: #ffc810;
 }
 
 .nav-text {
-    font-family: 'Grand Hotel', cursive;
-    font-size: 30px;
+	font-family: "Grand Hotel", cursive;
+	font-size: 30px;
 }
 
 .sign-btn {
-    color: #ffc810;
-    border-color: black;
-    background-color: black;
-    
+	color: #ffc810;
+	border-color: black;
+	background-color: black;
 }
 
 .passwordReset {
-    text-decoration: underline;
-    color: black;
+	text-decoration: underline;
+	color: black;
 }
 
 .enter-btn {
-    color: black;
-    border-color: #ffc810;
-    background-color: #ffc810;
-    width: 155px;
+	color: black;
+	border-color: #ffc810;
+	background-color: #ffc810;
+	width: 155px;
 }
 
 .enter-btn:hover {
-    color: #ffc810;
-    border-color: #ffc810;
-    background-color: #131313;
-    
+	color: #ffc810;
+	border-color: #ffc810;
+	background-color: #131313;
 }
 
 .signUp-btn {
-    color: #ffc810;
-    border-color: black;
-    background-color: black;
-    width: 100%;
-
+	color: #ffc810;
+	border-color: black;
+	background-color: black;
+	width: 100%;
 }
 
 .signUp-btn a {
-    text-decoration: none;
-    color: #ffc810;
-
+	text-decoration: none;
+	color: #ffc810;
 }
 
 .signUp-btn:hover {
-    background-color: #ffc810;
-    color: black;
-    width: 100%;
-    
+	background-color: #ffc810;
+	color: black;
+	width: 100%;
 }
 
 .signUp-btn a:hover {
-    text-decoration: none;
-    color: black;
-
+	text-decoration: none;
+	color: black;
 }
 
 .modal-header {
-    background-color: #ffc810;
-    color: black;
-
+	background-color: #ffc810;
+	color: black;
 }
 
 .modal-footer {
-    background-color: #131313;
-    color: #ffc810;
+	background-color: #131313;
+	color: #ffc810;
 }
 
-
 .moviesSelect {
-    background-color: #131313;
+	background-color: #131313;
 }
 
 .img-sizing {
-    width: 100%;
-    margin: 5px;
-       
+	width: 100%;
+	margin: 5px;
 }
 
 .img-sizing:hover {
-    transform: scale(115%);
+	transform: scale(115%);
 }
 
 .img-position {
-    object-position: 0 -15%;
+	object-position: 0 -15%;
 }
 
 .control-size {
-    width: 25px;
+	width: 25px;
 }
 
 .controller {
-    font-size: 50px;
+	font-size: 50px;
 }
 
 .memberSearch {
-    color: #131313;
-    max-width: 45%;
-
+	color: #131313;
+	max-width: 45%;
 }
 
 .poster {
-    display: block;
-    margin: 5px auto;
-    min-width: 50%;
-    max-width: 100%;
-
+	display: block;
+	margin: 5px auto;
+	min-width: 50%;
+	max-width: 100%;
 }
 
 .signature {
-    color: #ffc810;
-    align-items: center;
-    
+	color: #ffc810;
+	align-items: center;
 }
 
 .lets-btn:hover {
-    color: #ffc810;
-    background-color: black;
-    border-color: #ffc810;
+	color: #ffc810;
+	background-color: black;
+	border-color: #ffc810;
 }
 
 .modal-header {
-    background-color: #ffc810;
-    color: black;
-
+	background-color: #ffc810;
+	color: black;
 }
 
 .modal-footer {
-    background-color: #131313;
-    color: #ffc810;
+	background-color: #131313;
+	color: #ffc810;
 }
 
-
-
 .movielist {
-    color: #ffc810
-    
+	color: #ffc810;
 }
 
 .drop-btn {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
+	display: flex;
+	flex-flow: column;
+	width: 100%;
 }
 
 footer {
-    position: absolute;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
-    padding-top: 10px;
-    background-color: #ffc810;
-    color: black;
-    margin-bottom: 0px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-
-
-@media (max-width: 850px) {
-    #mobileView {
-        display: inline !important;
-    }
-    
-    #desktopView {
-        display: none !important;
-    }
-
-    .sign-btn {
-        width: 100%;
-    }
-
-    .search-btn {
-        width: 100%;
-    }
-
-
-    .fQcard {
-        min-width: auto;
-    }
-
-    .dropdown {
-        width: 98% !important;
-    }
-
-    .dropdown-menu-right {
-        left: 0;
-        right: auto;
-        
-    }
-
-    .enter-btn {
-        width: 100%;
-    }
-
+	position: absolute;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+	padding: 5px;
+	padding-top: 10px;
+	background-color: #ffc810;
+	color: black;
+	margin-bottom: 0px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
+@media (max-width: 850px) {
+	#mobileView {
+		display: inline !important;
+	}
+
+	#desktopView {
+		display: none !important;
+	}
+
+	.sign-btn {
+		width: 100%;
+	}
+
+	.search-btn {
+		width: 100%;
+	}
+
+	.fQcard {
+		min-width: auto;
+	}
+
+	.dropdown {
+		width: 98% !important;
+	}
+
+	.dropdown-menu-right {
+		left: 0;
+		right: auto;
+	}
+
+	.enter-btn {
+		width: 100%;
+	}
+}
