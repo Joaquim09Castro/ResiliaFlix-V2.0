@@ -93,14 +93,13 @@ body {
 
 .memberSearch {
     color: #131313;
-    max-width: 55%;
-    min-width: 55%;
+    max-width: 45%;
 }
 
 .poster {
     display: block;
     margin: 5px auto;
-    min-width: 15%;
+    min-width: 50%;
     max-width: 100%;
 
 }
