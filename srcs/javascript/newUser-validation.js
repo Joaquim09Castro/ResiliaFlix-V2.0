@@ -21,9 +21,8 @@ idNumber.addEventListener("focusout", (event) => {
   } else {
     messageIdNumber.textContent = "";
   }
-
-  event.preventDefault();
-  event.stopPropagation();
+	event.preventDefault();
+	event.stopPropagation();
 });
 
 email.addEventListener("focusout", (event) => {
@@ -36,37 +35,40 @@ email.addEventListener("focusout", (event) => {
   } else {
     messageEmail.textContent = "";
   }
-
-  event.preventDefault();
-  event.stopPropagation();
+	event.preventDefault();
+	event.stopPropagation();
 });
 
 passWord.addEventListener("focusout", (event) => {
-  passWordStr = passWord.value;
-  if (passWordStr.length < 8) {
-    messageDisplay.textContent = "Your password must be at least 8 characters";
-    passWord.focus();
-  } else {
-    messageDisplay.textContent = "Valid Password";
-    setTimeout(() => {
-      messageDisplay.textContent = "";
-    }, 3000);
-  }
+	passWordStr = passWord.value;
+	if (passWordStr.length < 8) {
+		messageDisplay.classList.add("alert-color");
+		messageDisplay.textContent =
+			"Your password must be at least 8 characters long";
+		passWord.focus();
+	} else {
+		messageDisplay.classList.remove("alert-color");
+		messageDisplay.textContent = "Valid Password";
+		setTimeout(() => {
+			messageDisplay.textContent = "";
+		}, 3000);
+	}
 
-  event.preventDefault();
-  event.stopPropagation();
+	event.preventDefault();
+	event.stopPropagation();
 });
 
 validPassWord.addEventListener("focusout", (event) => {
-  validPassWordStr = validPassWord.value;
+	validPassWordStr = validPassWord.value;
 
-  if (passWordStr.localeCompare(validPassWordStr) != 0) {
-    messagePasswordCheck.textContent =
-      "Passwords must be identical, please re-enter the new password";
-    passWord.focus();
-  } else {
-    messagePasswordCheck.textContent = " Password checked ";
-  }
-  event.preventDefault();
-  event.stopPropagation();
+	if (passWordStr.localeCompare(validPassWordStr) != 0) {
+		messagePasswordCheck.classList.add("alert-color");
+		messagePasswordCheck.textContent = "Passwords must be identical";
+		passWord.focus();
+	} else {
+		messagePasswordCheck.classList.remove("alert-color");
+		messagePasswordCheck.textContent = " Password checked ";
+	}
+	event.preventDefault();
+	event.stopPropagation();
 });

@@ -36,13 +36,6 @@ body {
     width: 100%;
 }
 
-.enter-btn:hover {
-    color: #ffc810;
-    border-color: #ffc810;
-    background-color: #131313;
-    
-}
-
 .signUp-btn {
     color: #ffc810;
     border-color: black;
@@ -80,19 +73,6 @@ body {
     object-position: 0 -15%;
 }
 
-.modal-header {
-    background-color: #ffc810;
-    color: black;
-
-}
-
-.modal-footer {
-    background-color: #131313;
-    color: #ffc810;
-}
-
-
-
 .memberSearch {
     color: #131313;
     max-width: 45%;
@@ -107,15 +87,30 @@ body {
 
 }
 
-
-.signature {
+.userArea {
     color: #ffc810;
-    align-items: center;
-    
+    background-color: #131313;
 }
- 
-.signature h3 {
-    text-align: center;
+
+.moviesSelect {
+    color: #ffc810;
+    min-width: 600px;
+    background-color: #131313;
+
+}
+
+.movielist {
+    color: #ffc810;
+}
+
+.movieTitle {
+    opacity: 0%;
+}
+
+.movieTitle:hover {
+    opacity: 100%;
+    
+    
 }
 
 .lets-btn {
@@ -131,66 +126,7 @@ body {
     border-color: #ffc810;
 }
 
-.card-deck {
-    margin: 0;
-}
 
-.card-img-top{
-    height: 100px;
-}
-
-.card-sizing {
-    min-height: 18rem;
-    max-width: 18rem;
-
-}
-
-
-.fQuestions {
-    
-    color: #ffc810;
-    flex-flow: column;
-    text-align: center;
-    
-    
-}
-.card-header {
-    background-color: #131313;
-
-}
-
-.fQuestions h2 {
-    font-weight: bolder;
-    
-}
-
-.fQcard {
-    color: white;
-    max-width: 50rem;
-    min-width: 50rem;
-    background-color: #131313;  
-    flex-flow: column;
-}
-
-.fQcard:active{
-    border: none
-}
-
-.fQtext {
-    color: #ffc810;
-    text-decoration: none;
-    font-size: 22px;
-    background-color: #131313;
-
-
-}
-
-.fQtext:hover {
-    color: #ffc810;
-    text-decoration: none;
-    font-weight: bold
-
-}
 .drop-btn {
     display: flex;
     flex-flow: column;
@@ -224,11 +160,8 @@ footer {
         width: 100%;
     }
 
-    .fQcard {
-        min-width: auto;
-    }
 
-    .resultArea {
+    .userArea {
         flex-flow: column;
 
     }
