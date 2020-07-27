@@ -19,7 +19,7 @@ buttonLogin.addEventListener("click", (event) => {
 			email.value == "usuario@resiliaflix.com" &&
 			password.value == "passwordusuario"
 		) {
-			window.open("/loggedIndex.htm", "_self");
+			window.open("loggedIndex.htm", "_self");
 		} else if (
 			email.value == "usuario@resiliaflix.com" &&
 			password.value !== "passwordusuario"
