@@ -36,6 +36,7 @@ body {
 	border-color: #ffc810;
 	background-color: #ffc810;
 	width: 155px;
+	align-items: center;
 }
 
 .enter-btn:hover {
@@ -153,7 +154,7 @@ body {
 }
 
 footer {
-	position: absolute;
+	position: fixed;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
