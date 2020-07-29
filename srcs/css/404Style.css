@@ -41,7 +41,8 @@ main {
 
 
 footer {
-    position: absolute;
+    position: fixed;
+    bottom: 0px;
     display: flex;
     flex-flow: column;
     align-items: center;
